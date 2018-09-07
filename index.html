@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
   </head>
 
@@ -96,23 +96,33 @@
    
 
     <section id="organizers" class="organizers-section bg-white">
-      <div class="container">
-<!--         <div class="row mb-4 mb-lg-5">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">About BlackRock</h2>
-          </div>
-        </div> -->
-<!--           <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
-              <h4>BlackRock, Inc.</h4>
-              <p class="text-black-50 mb-0"></p>
+      <div class="container organizers-member blackrock-member">
+        <div class="row my-4 my-lg-5">
+          <div class="col-lg-6  mt-lg-5 text-center">
+            <div class="logo">
+              <!-- <img class="mx-auto rounded-circle" src="img/bg-masthead.jpg" alt=""> -->
+              <img class="img-fluid mb-3 mb-lg-0" src="img/BlackRock_wordmark.svg.png" alt="" style="width: 90%;">
             </div>
-          </div> -->
+          </div>
+          <div class="col-lg-6 mt-lg-5 featured-text">
+            <p>
+            BlackRock is one of the world's preeminent asset management firms and a premier provider of investment management.
+          </p>
+          <p>
+            We’re proud to have Blackrock as our exclusive partner for this event, without their help this event would not be possible.  
+          </p>
+          </div>
         </div>
-        <div class="row mr-5 ml-5">
+      </div>
+      <div class="container organizers-member algotrade-member">
+        <div class="row my-4 my-lg-5">
           <div class="col-lg-6 text-center">
-            <img class="img-fluid mb-3 mb-lg-0 algotrade-logo" src="img/algotrade_logo.png" alt="" style="width: 80%;">
-
+            <div class="logo">
+              <!-- <img class="mx-auto rounded-circle" src="img/bg-masthead.jpg" alt=""> -->
+              <img class="img-fluid mb-3 mb-lg-0" src="img/algotrade_logo.png" alt="" style="width: 80%;">
+            </div>
+          </div>
+          <div class="col-lg-6 mt-lg-5 featured-text">
             <p>
               The Algorithmic Trading Society was founded in March 2018 with the aim of bringing students together to develop their understanding of the application algorithms in a financially driven context.
             </p>
@@ -120,19 +130,7 @@
               Whether you’re a novice to trading or a veteran Quant, we welcome all Imperial College students to be part of the society.
             </p>
           </div>
-          <div class="col-lg-6 text-center">
-            <img class="img-fluid mb-3 mb-lg-0 blackrock-logo" src="img/BlackRock_wordmark.svg.png" alt="" style="width: 90%;">
-            <br>
-            <br>
-            <br>
-            <p>
-              BlackRock is one of the world's preeminent asset management firms and a premier provider of investment management.
-            </p>
-            <p>
-              We’re proud to have Blackrock as our exclusive partner for this event, without their help this event would not be possible.  
-            </p>
-          </div>
-          </div>
+        </div>
       </div>
     </section>
 
@@ -455,15 +453,14 @@
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Details</h2>
             <br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.855156008078!2d-0.08906948398943337!3d51.51587327963656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cacb81ef6b9%3A0x111365ccb63cd7d5!2sBlackRock!5e0!3m2!1sen!2sus!4v1534991530326" width="80%" height="90%" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-            <br/>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.855156008078!2d-0.08906948398943337!3d51.51587327963656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cacb81ef6b9%3A0x111365ccb63cd7d5!2sBlackRock!5e0!3m2!1sen!2sus!4v1534991530326" width="90%" height="150%" frameborder="0" marginheight="0" marginwidth="0"></iframe>
             <small>
               <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.855156008078!2d-0.08906948398943337!3d51.51587327963656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cacb81ef6b9%3A0x111365ccb63cd7d5!2sBlackRock!5e0!3m2!1sen!2sus!4v1534991530326"></a>
             </small> 
           </div>
         </div>
-        <div class="row my-4 my-lg-5">
-          <div class="col-lg-6 details-text">
+        <div class="row my-4 my-lg-5 details-text">
+          <div class="col-lg-6 mt-2 travel-text">
             <h4 class="text-uppercase text-center">
               Travel
             </h4>
@@ -486,7 +483,7 @@
               There are many guides online for figuring the most cost effective method for you to use on the tube, expect to pay a minimum of £10 for travel within London for the weekend.
             </p>
           </div>
-          <div class="col-lg-6 details-text">
+          <div class="col-lg-6 mt-2 food-text">
             <h4 class="text-uppercase text-center">
               Food
             </h4>
@@ -544,11 +541,11 @@
     </section> -->
 
 
-    <section id="register" class="register-section bg-light">
+    <section id="register" class="register-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center mx-auto">
-            <h2 class="section-heading text-uppercase">Register Interest</h2>
+            <h2 class="section-heading text-uppercase text-white">Register Interest</h2>
             <br/>
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeDBJw_uciJbGpKZOIvm8yZv9xr5kNjjQISC4we5U0ukqoJow/viewform?embedded=true" width="640" height="629" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
           </div>
