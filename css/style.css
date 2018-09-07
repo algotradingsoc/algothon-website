@@ -112,13 +112,17 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.9) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.9) 0%, rgba(22, 22, 22, 0.5) 90%, #161616 100%), url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 
+/*#masthead-content {
+  padding-top: 10rem;
+}
+*/
 .masthead h1 {
   font-family: 'Varela Round';
   font-size: 2.5rem;
@@ -137,6 +141,13 @@
   -webkit-background-clip: text;
 }
 
+.masthead img {
+  padding-top: 2rem;
+  width: 60%;
+  height: 50%;
+
+}
+
 @media (min-width: 768px) {
   .masthead h1 {
     font-size: 4rem;
@@ -149,6 +160,8 @@
     height: 100vh;
     padding: 0;
   }
+
+
   .masthead h1 {
     font-size: 6.5rem;
     line-height: 6.5rem;
@@ -188,8 +201,8 @@
 }
 
 .about-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
@@ -463,6 +476,13 @@ bottom: 0;
   border: 5px solid #487eb0;
 }
 
+#speaker-unknown {}
+
+.speaker-member-unknown img { 
+  width: 100%;
+  height: 100%;
+}
+
 .speaker-member h4 {
   margin-top: 25px;
   margin-bottom: 0;
@@ -473,20 +493,37 @@ bottom: 0;
   margin-top: 0;
 }
 
-.sponsor-section {
+.register-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
-.sponsor-section .featured-text {
-  padding: 2rem;
+.organizers-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding-top: 2rem;
+  padding-bottom: 15rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
-@media (min-width: 992px) {
-  .sponsor-section .featured-text {
-    padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #487eb0;
-  }
+.organizers-section .blackrock-logo{
+  padding-top: 18.6rem;
+}
+
+.organizers-section .algotrade-logo{
+  padding-top: 8rem;
+}
+
+.organizers-section p {
+  padding-right: 2rem;
+  padding-left: 2rem; 
+  text-align: justify;
+  
 }
 
 .details-section {
