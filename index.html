@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 
   </head>
 
@@ -38,8 +38,12 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#organizers">Organizers</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#activities">Activities</a>
             </li>
@@ -56,10 +60,10 @@
               <a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#sponsor">Sponsor</a>
+              <a class="nav-link js-scroll-trigger" href="#details">Details</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#details">Details</a>
+              <a class="nav-link js-scroll-trigger" href="#register">Register</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#faq">FAQs</a>
@@ -74,43 +78,81 @@
 
     <!-- Header -->
     <header class="masthead">
-      <div class="container d-flex h-100 align-items-center">
+      <div id="masthead-content" class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
           <h1 class="mx-auto my-0 text-uppercase">Algothon 2018</h1>
           <h1 class="mx-auto my-0 text-uppercase">@ BlackRock</h1>
           <h2 class="text-white-50 mx-auto mt-2 mb-5">20 October 2018, 9AM - 21 October 2018, 5PM<br />BlackRock Office, London, United Kingdom</h2>
-          <!-- <a href="#about" class="btn btn-primary js-scroll-trigger">Register</a> -->
+          <a href="#register" class="btn btn-primary js-scroll-trigger">Register Interest</a>
+<!--           <br>
+          <img id="masthead-logo" src="img/logos.jpg"> -->
         </div>
+
       </div>
+
     </header>
 
     <!-- About Section -->
-    <section id="about" class="about-section text-center">
+   
+
+    <section id="organizers" class="organizers-section bg-white">
+      <div class="container">
+<!--         <div class="row mb-4 mb-lg-5">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">About BlackRock</h2>
+          </div>
+        </div> -->
+<!--           <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>BlackRock, Inc.</h4>
+              <p class="text-black-50 mb-0"></p>
+            </div>
+          </div> -->
+        </div>
+        <div class="row mr-5 ml-5">
+          <div class="col-lg-6 text-center">
+            <img class="img-fluid mb-3 mb-lg-0 algotrade-logo" src="img/algotrade_logo.png" alt="" style="width: 80%;">
+
+            <p>
+              The Algorithmic Trading Society was founded in March 2018 with the aim of bringing students together to develop their understanding of the application algorithms in a financially driven context.
+            </p>
+            <p>
+              Whether you’re a novice to trading or a veteran Quant, we welcome all Imperial College students to be part of the society.
+            </p>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img class="img-fluid mb-3 mb-lg-0 blackrock-logo" src="img/BlackRock_wordmark.svg.png" alt="" style="width: 90%;">
+            <br>
+            <br>
+            <br>
+            <p>
+              BlackRock is one of the world's preeminent asset management firms and a premier provider of investment management.
+            </p>
+            <p>
+              We’re proud to have Blackrock as our exclusive partner for this event, without their help this event would not be possible.  
+            </p>
+          </div>
+          </div>
+      </div>
+    </section>
+
+     <section id="about" class="about-section text-center">
       <div class="container">
         <div class="row">
           <div class="col-xl-8 mx-auto">
             <h2 class="text-white text-uppercase mb-4">About</h2>
             <p class="text-white-50">
-              Algothon 2018 in partnership with BlackRock is the inaugural event of the 2018/19 academic year organised by the Imperial College Algorithimic Trading Society. We’re excited to bring you 24 hours of intense hacking, bringing 200 of the brightest minds together to produce incredible new financial technology.</p> 
+              Algothon 2018 in partnership with BlackRock is the inaugural event of the 2018/19 academic year organised by the Imperial College Algorithmic Trading Society. We’re excited to bring you 24 hours of intense hacking, bringing 200 of the brightest minds together to produce incredible new financial technology.</p> 
             <p class="text-white-50">
               The event will be held in the offices of BlackRock, one of the most highly respected financial technology companies operating today. In addition to the main event, we’re delighted to offer several talks from field leading researchers in machine learning, as well as workshops to get you up to speed on some of the most exciting new technologies and practices in the field.</p>
             <p class="text-white-50">
               This will be an incredible weekend, producing amazing new technologies, learning from some of the best minds in the field, and overall having a great time! 
             </p>
-              <!-- <br />Register
-              <a href="#">here</a> to sign up for the event.</p> -->
+
           </div>
         </div>
         <!-- <img src="img/ipad.png" class="img-fluid" alt=""> -->
       </div>
-    </section>
-
-    <section id="map" class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.855156008078!2d-0.08906948398943337!3d51.51587327963656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cacb81ef6b9%3A0x111365ccb63cd7d5!2sBlackRock!5e0!3m2!1sen!2sus!4v1534991530326" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-      <br/>
-      <small>
-        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.855156008078!2d-0.08906948398943337!3d51.51587327963656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cacb81ef6b9%3A0x111365ccb63cd7d5!2sBlackRock!5e0!3m2!1sen!2sus!4v1534991530326"></a>
-      </small> 
     </section>
 
     <section id="activities" class="activities-section">
@@ -133,7 +175,7 @@
                 Algothon
               </h3>
               <p>
-                In the titular event, you will have 24 hours to produce the most innovative algorithm you can. At the end of the 24 hours, all teams will have the opportunity to demonstrate their product in a fair where the judges (and other participants) will go around and see what has been produced. The judges will select their top 6 entrants, who will then be able to give a short presentation to all attendees to showcase their work. Note that this is not only a test of technical performance. For instance, a team who’s product isn’t working well technically but who has a practical plan of implementing it in a real world situation has just as much chance of winning as a team with a well made technical product but no plan for implementing it. The judging panel will consist of the speakers at the event as well as senior BlackRock employees. 
+                In the titular event, you will have 24 hours to produce the most innovative algorithm you can. At the end of the 24 hours, all teams will have the opportunity to demonstrate their product in a fair where the judges (and other participants) will go around and see what has been produced. The judges will select their top 6 entrants, who will then be able to give a short presentation to all attendees to showcase their work. Note that this is not only a test of technical performance. For instance, a team who’s product isn’t working well technically but who has a practical plan of implementing it in a real world situation has just as much chance of winning as a team with a well made technical product but no plan for implementing it. The judging panel will consist of world-leading academics. 
               </p>
             </div>
           </div>
@@ -357,65 +399,70 @@
               <p class="text-muted">Prof. Doucet of Oxford University will bring his world leading expertise on Monte Carlo methods.</p>
             </div>
           </div>
-          <div class="col-lg-8 my-auto text-center">
-            <h3>
-              More speakers to come!
-            </h3>
-          </div>
-          <!-- <div class="col-lg-4">
+          <div class="col-lg-4">
             <div class="speaker-member">
-              <img class="mx-auto rounded-circle" src="img/bg-masthead.jpg" alt="">
-              <h4>Speaker 2</h4>
-              <p class="text-muted">Speaker 2</p>
+              <div class="circle-avatar" style="background-image:url(img/DrAndreiKirilenko.jpg)"></div>
+              <h4>Dr. Andrei Kirilenko</h4>
+              <p class="text-muted">Dr. Andrei Kirilenko is the Director of the Centre for Global Finance and Technology at the Imperial College Business School.</p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="speaker-member">
-              <img class="mx-auto rounded-circle" src="img/bg-masthead.jpg" alt="">
-              <h4>Speaker 3</h4>
-              <p class="text-muted">Speaker 3</p>
+              <div class="circle-avatar" style="background-image:url(img/BlackRock_logo.png)"></div>
+              <h4>BlackRock Lead Researcher in Machine Learning</h4>
+              <p class="text-muted"></p>
             </div>
-          </div> -->
+          </div>
+        </div>
+        <div class="row" style="text-align: center;">
+          <div class="col-lg-2">
+            
+          </div>
+          <div class="col-lg-4">
+            <div class="speaker-member">
+              <div class="circle-avatar" style="background-image:url(img/unknown.png)"></div>
+              <h4></h4>
+              <p class="text-muted"></p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="speaker-member">
+              <div class="circle-avatar" style="background-image:url(img/unknown.png)"></div>
+              <h4></h4>
+              <p class="text-muted"></p>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h4>
+              More speakers to be confirmed soon!
+            </h4>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <section id="sponsor" class="sponsor-section bg-light">
-      <div class="container">
-        <div class="row mb-4 mb-lg-5">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Sponsor</h2>
-          </div>
-        </div>
-        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div class="col-xl-8 col-lg-7 mx-auto">
-            <img class="img-fluid mb-3 mb-lg-0" src="img/BlackRock_wordmark.svg.png" alt="">
-          </div>
-<!--           <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
-              <h4>BlackRock, Inc.</h4>
-              <p class="text-black-50 mb-0"></p>
-            </div>
-          </div> -->
-        </div>
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <p class="text-center">
-              We’re proud to have Blackrock as our exclusive partner for this event, without their help this event would not be possible.  
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+
 
     <section id="details" class="details-section bg-light">
       <div class="container">
         <div class="row mb-4 mb-lg-5">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Details</h2>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.855156008078!2d-0.08906948398943337!3d51.51587327963656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cacb81ef6b9%3A0x111365ccb63cd7d5!2sBlackRock!5e0!3m2!1sen!2sus!4v1534991530326" width="80%" height="90%" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+            <br/>
+            <small>
+              <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.855156008078!2d-0.08906948398943337!3d51.51587327963656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cacb81ef6b9%3A0x111365ccb63cd7d5!2sBlackRock!5e0!3m2!1sen!2sus!4v1534991530326"></a>
+            </small> 
           </div>
         </div>
-        <div class="row my-4 my-lg-5 jumbotron">
+        <div class="row my-4 my-lg-5">
           <div class="col-lg-6 details-text">
             <h4 class="text-uppercase text-center">
               Travel
@@ -453,7 +500,6 @@
         </div>
       </div>
     </section>
-
     <!-- Projects Section -->
     <!-- <section id="projects" class="projects-section bg-light">
       <div class="container"> -->
@@ -496,6 +542,19 @@
 
       </div>
     </section> -->
+
+
+    <section id="register" class="register-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center mx-auto">
+            <h2 class="section-heading text-uppercase">Register Interest</h2>
+            <br/>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeDBJw_uciJbGpKZOIvm8yZv9xr5kNjjQISC4we5U0ukqoJow/viewform?embedded=true" width="640" height="629" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="faq" class="faq-section bg-light">
       <div class="row mx-auto">
@@ -575,20 +634,7 @@
 
         <div class="row">
 
-
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card py-4 h-100">
-              <div class="card-body text-center">
-                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Address</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">Imperial College London, Kensington, London SW7 2AZ, UK</div>
-<!--                 <div class="small text-black-50">BlackRock Office, 12 Copthall Avenue, London EC2N 2DL</div> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-3 mb-md-0">
+          <div class="col-md-6 mb-3 mb-md-0">
             <div class="card py-4 h-100">
               <div class="card-body text-center">
                 <i class="fas fa-envelope text-primary mb-2"></i>
@@ -601,7 +647,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 mb-3 mb-md-0">
+          <div class="col-md-6 mb-3 mb-md-0">
             <div class="card py-4 h-100">
               <div class="card-body text-center">
                 <i class="fab fa-facebook-square text-primary mb-2"></i>
