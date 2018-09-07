@@ -496,6 +496,7 @@ bottom: 0;
 .register-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  background-color: #161616;
 }
 
 .organizers-section {
@@ -503,20 +504,20 @@ bottom: 0;
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding-top: 2rem;
-  padding-bottom: 15rem;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 
-.organizers-section .blackrock-logo{
-  padding-top: 18.6rem;
+.organizers-section .container{
+  position: relative;
+  top: 25%;
+  transform: translateY(-50%);
 }
 
-.organizers-section .algotrade-logo{
-  padding-top: 8rem;
+.organizers-section .organizers-member{
+  padding-top: 1rem;
 }
 
 .organizers-section p {
@@ -524,6 +525,19 @@ bottom: 0;
   padding-left: 2rem; 
   text-align: justify;
   
+}
+
+@media (min-width: 992px) {
+  .organizers-section {
+    height: 100vh;
+    padding: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .organizers-section .blackrock-member{
+    padding-top: 30rem;
+  }
 }
 
 .details-section {
@@ -538,14 +552,8 @@ bottom: 0;
   margin-top: 10%;
 }
 
-.details-section .featured-text {
-  padding-top: 2rem;
-  padding-bottom: 2rem;  
-  text-align: justify;
-}
-
 .details-section .details-text {
-  padding: 3rem;
+  padding-top: 10rem;
   text-align: justify;
 }
 
