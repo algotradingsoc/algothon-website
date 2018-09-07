@@ -36,7 +36,7 @@
   background-color: transparent;
 }
 
-#mainNav .navbar-nav .dropdown .dropdown-menu {
+/*#mainNav .navbar-nav .dropdown .dropdown-menu {
   border: none;
   background-color: rgba(255, 255, 255, 0.4) !important;
   box-shadow: none !important;
@@ -57,14 +57,14 @@
 #mainNav .navbar-nav .dropdown .dropdown-menu a:active {
   background-color: #487eb0 !important;
   color: #616161 !important;
-}
+}*/
 
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.7);
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -201,8 +201,8 @@
 }
 
 .about-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
@@ -226,8 +226,8 @@
 }
 
 .activities-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .activities-section .activities-icon {
@@ -433,8 +433,8 @@
 }*/
 
 .speakers-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .speaker-member {
@@ -494,8 +494,8 @@ bottom: 0;
 }
 
 .register-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   background-color: #161616;
 }
 
@@ -541,8 +541,8 @@ bottom: 0;
 }
 
 .details-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .details-section .details-icon {
@@ -589,8 +589,8 @@ bottom: 0;
 }*/
 
 .faq-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;  
+  padding-top: 10rem;
+  padding-bottom: 10rem;  
 }
 
 .faq-section .jumbotron {
