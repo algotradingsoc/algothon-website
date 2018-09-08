@@ -196,26 +196,6 @@
   }
 }
 
-@media only screen and (min-width: 1400px) {
-  .masthead {
-    height: 100vh;
-    padding: 0;
-  }
-
-  .masthead .masthead-logo {
-    width: 40%;
-  }
-  .masthead h1 {
-    font-size: 5rem;
-    line-height: 5rem;
-    letter-spacing: 0.8rem;
-  }
-  .masthead h2 {
-    max-width: 30rem;
-    font-size: 1.25rem;
-  }
-}
-
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
