@@ -29,6 +29,17 @@
   color: rgba(225, 225, 225, 0.5);
 }
 
+#mainNav .navbar-nav .nav-item .btn{
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  font-family: 'Varela Round';
+  font-size: 100%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 0;
+}
+
 #mainNav .navbar-nav .nav-item:hover {
   color: fade(white, 80%);
   outline: none;
@@ -114,7 +125,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 50rem;
+  min-height: 60rem;
   padding: 15rem 0;
   background: linear-gradient(to bottom, rgba(22, 22, 22, 0.8) 20%, rgba(22, 22, 22, 0.5) 40%, rgba(22, 22, 22, 0.7) 80%, #161616 100%), url("../img/bg-masthead.jpg");
   background-position: center;
@@ -198,9 +209,9 @@
 
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
+  padding: 1rem 1.75rem;
   font-family: 'Varela Round';
-  font-size: 80%;
+  font-size: 150%;
   text-transform: uppercase;
   letter-spacing: .15rem;
   border: 0;
