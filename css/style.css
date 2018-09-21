@@ -420,12 +420,14 @@
   margin: 0 0 0 -25px;
 }
 
-@media screen and (max-width: 65.375em) {
+@media screen and (max-width: 74.9em) {
 
   .cbp_tmtimeline > li .cbp_tmtime span:last-child {
-    font-size: 1.5em;
+    padding-top: 0.4rem;
+    font-size: 1.15em;
   }
 }
+
 
 @media screen and (max-width: 47.2em) {
   .cbp_tmtimeline:before {
@@ -482,34 +484,57 @@
 .speaker-member {
   margin-bottom: 5rem;
   text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+@media screen and (min-width: 80em) {
+  .speaker-member {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 61.9725em) {
+  .speaker-member {
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .speaker-member {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
 }
 
 .speaker-member div.circle-avatar{
-/* make it responsive */
-max-width: 80%;
-width:80%;
-height:80%;
-display:block;
-/* div height to be the same as width*/
-padding-top:80%;
+  /* make it responsive */
+  max-width: 80%;
+  width:80%;
+  height:80%;
+  display:block;
+  /* div height to be the same as width*/
+  padding-top:80%;
 
-/* make it a circle */
-border-radius:50%;
+  /* make it a circle */
+  border-radius:50%;
 
-/* Centering on image`s center*/
-background-position-y: center;
-background-position-x: center;
-background-repeat: no-repeat;
+  /* Centering on image`s center*/
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
 
-/* it makes the clue thing, takes smaller dimension to fill div */
-background-size: cover;
+  /* it makes the clue thing, takes smaller dimension to fill div */
+  background-size: cover;
 
-/* it is optional, for making this div centered in parent*/
-margin: 0 auto;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
+  /* it is optional, for making this div centered in parent*/
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .speaker-member img {
@@ -517,8 +542,6 @@ bottom: 0;
   height: 300px;
   border: 5px solid #487eb0;
 }
-
-#speaker-unknown {}
 
 .speaker-member-unknown img { 
   width: 100%;
