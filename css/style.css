@@ -114,7 +114,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 35rem;
+  min-height: 50rem;
   padding: 15rem 0;
   background: linear-gradient(to bottom, rgba(22, 22, 22, 0.8) 20%, rgba(22, 22, 22, 0.5) 40%, rgba(22, 22, 22, 0.7) 80%, #161616 100%), url("../img/bg-masthead.jpg");
   background-position: center;
@@ -146,7 +146,7 @@
 }
 
 .masthead .masthead-logo {
-  width: 30%;
+  width: 40%;
 }
 
 .masthead img {
@@ -162,7 +162,7 @@
     padding: 0;
   }
   .masthead .masthead-logo {
-    width: 30%;
+    width: 40%;
   }
 
   .masthead h1 {
@@ -183,7 +183,7 @@
   }
 
   .masthead .masthead-logo {
-    width: 38%;
+    width: 45%;
   }
   .masthead h1 {
     font-size: 2rem;
@@ -407,14 +407,7 @@
   margin: 0 0 0 -25px;
 }
 
-@media screen and (max-width: 74.9em) {
-
-  .cbp_tmtimeline > li .cbp_tmtime span:last-child {
-    font-size: 1.1em;
-  }
-}
-
-@media screen and (max-width: 61.9em) {
+@media screen and (max-width: 65.375em) {
 
   .cbp_tmtimeline > li .cbp_tmtime span:last-child {
     font-size: 1.5em;
@@ -577,7 +570,7 @@ bottom: 0;
 
 .details-section {
   padding-top: 8rem;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
 }
 
 .details-section .details-icon {
