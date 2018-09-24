@@ -81,7 +81,7 @@
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -573,16 +573,15 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  padding-bottom: 5rem;
 }
 
 .organizers-section .container{
   position: relative;
-  top: 25%;
-  transform: translateY(-50%);
 }
 
 .organizers-section .organizers-member{
-  padding-top: 1rem;
+  padding-top: 8rem;
 }
 
 .organizers-section p {
@@ -600,7 +599,7 @@
 
 @media (max-width: 992px) {
   .organizers-section .blackrock-member{
-    padding-top: 30rem;
+    padding-top: 10rem;
   }
 }
 
