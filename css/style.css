@@ -5,7 +5,7 @@
  */
 #mainNav {
   min-height: 56px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #161616;
 }
 
 #mainNav .navbar-toggler {
@@ -76,21 +76,22 @@
   color: #616161 !important;
 }*/
 
-@media (min-width: 1600px) {
+@media (min-width: 992px) {
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent;
     transition: background-color 0.3s ease-in-out;
   }
+
   #mainNav .navbar-brand {
     padding: .5rem 0;
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link {
     transition: none;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1rem;
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link:hover {
@@ -100,14 +101,18 @@
     color: white;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+    background-color: #161616;
   }
+
   #mainNav.navbar-shrink .navbar-brand {
-    color: #161616;
+    color: rgba(255, 255, 255, 0.5);
   }
   #mainNav.navbar-shrink .nav-link {
     color: #161616;
-    padding: 1.5rem 1.5rem 1.25rem;
+    padding: 1.5rem 1rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
@@ -569,7 +574,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 45rem;
+  min-height: 80rem;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -602,6 +607,69 @@
   .organizers-section .blackrock-member{
     padding-top: 10rem;
   }
+}
+
+.sponsor-member {
+  margin-bottom: 5rem;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  
+}
+
+@media screen and (min-width: 80em) {
+  .sponsor-member {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 61.9725em) {
+  .sponsor-member {
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .sponsor-member {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+
+.sponsor-member div.circle-avatar{
+  /* make it responsive */
+  max-width: 80%;
+  width:80%;
+  height:80%;
+  display:block;
+  /* div height to be the same as width*/
+  padding-top:80%;
+
+  /* make it a circle */
+  border-radius:50%;
+
+  /* Centering on image`s center*/
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+
+  /* it makes the clue thing, takes smaller dimension to fill div */
+  background-size: cover;
+
+  /* it is optional, for making this div centered in parent*/
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.sponsor-member img {
+  width: 300px;
+  height: 300px;
+  border: 5px solid #487eb0;
 }
 
 .details-section {
