@@ -5,6 +5,7 @@
  */
 #mainNav {
   min-height: 56px;
+  max-width: 100%;
   background-color: #161616;
 }
 
@@ -22,7 +23,7 @@
 #mainNav .navbar-brand {
   color: rgba(225, 225, 225, 0.6);
   font-weight: 700;
-  padding: .9rem 0;
+  padding: .5rem 0;
 }
 
 #mainNav .navbar-nav .nav-item a{
@@ -33,7 +34,7 @@
 #mainNav .navbar-nav form button{
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   margin-left: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   font-family: 'Varela Round';
   font-size: 100%;
   text-transform: uppercase;
@@ -86,12 +87,12 @@
   }
 
   #mainNav .navbar-brand {
-    padding: .5rem 0;
+    padding: 0 1rem;
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link {
     transition: none;
-    padding: 2rem 1rem;
+    padding: 2rem 0.5rem;
     color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link:hover {
@@ -112,7 +113,7 @@
   }
   #mainNav.navbar-shrink .nav-link {
     color: #161616;
-    padding: 1.5rem 1rem 1.25rem;
+    padding: 1.5rem 0.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
@@ -172,6 +173,11 @@
   width: 60%;
   height: 50%;
 
+}
+
+.masthead .apply h3{
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 @media only screen and (min-width: 992px) {
@@ -665,6 +671,7 @@
   right: 0;
   bottom: 0;
 }
+
 
 .sponsor-member img {
   width: 300px;
