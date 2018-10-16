@@ -492,18 +492,54 @@
   font-size: 1rem;
 }
 
+.team-member h4 {
+  font-size: 1.4rem;
+  padding-top: 0.5rem;
+}
+
+.team-member-s h4 {
+  font-size: 1.4rem;
+  padding-top: 0.5rem;
+}
+
 .speaker-member {
   margin-bottom: 5rem;
   text-align: center;
   padding-right: 1rem;
   padding-left: 1rem;
-  
 }
 
 @media screen and (min-width: 80em) {
   .speaker-member {
     padding-right: 1rem;
     padding-left: 1rem;
+  }
+  .team-member-s div.circle-avatar{
+  /* make it responsive */
+  max-width: 30%;
+  width:30%;
+  height:30%;
+  display:block;
+  /* div height to be the same as width*/
+  padding-top:30%;
+
+  /* make it a circle */
+  border-radius:50%;
+
+  /* Centering on image`s center*/
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+
+  /* it makes the clue thing, takes smaller dimension to fill div */
+  background-size: cover;
+
+  /* it is optional, for making this div centered in parent*/
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   }
 }
 
@@ -512,6 +548,34 @@
     padding-right: 10rem;
     padding-left: 10rem;
   }
+  .team-member-s div.circle-avatar{
+    /* make it responsive */
+    max-width: 40%;
+    width:40%;
+    height:40%;
+    display:block;
+    /* div height to be the same as width*/
+    padding-top:40%;
+
+    /* make it a circle */
+    border-radius:50%;
+
+    /* Centering on image`s center*/
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+
+    /* it makes the clue thing, takes smaller dimension to fill div */
+    background-size: cover;
+
+    /* it is optional, for making this div centered in parent*/
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
 }
 
 @media screen and (max-width: 48em) {
@@ -520,6 +584,37 @@
     padding-left: 5rem;
   }
 }
+
+.team-member div.circle-avatar{
+  /* make it responsive */
+  max-width: 40%;
+  width:40%;
+  height:40%;
+  display:block;
+  /* div height to be the same as width*/
+  padding-top:40%;
+
+  /* make it a circle */
+  border-radius:50%;
+
+  /* Centering on image`s center*/
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+
+  /* it makes the clue thing, takes smaller dimension to fill div */
+  background-size: cover;
+
+  /* it is optional, for making this div centered in parent*/
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+
 
 .speaker-member div.circle-avatar{
   /* make it responsive */
@@ -608,7 +703,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 145rem;
+  min-height: 185rem;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
