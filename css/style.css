@@ -274,26 +274,26 @@
   pointer-events: none;
 }
 
-.activities-section {
+.judging-section {
   padding-top: 2rem;
   padding-bottom: 5rem;
 }
 
-.activities-section .activities-icon {
+.judging-section .judging-icon {
   font-size: 24px;
   text-align: center;
   color: #487eb0;
   margin-top: 10%;
 }
 
-.activities-section .featured-text {
+.judging-section .featured-text {
   padding-top: 2rem;
   padding-bottom: 2rem;  
   text-align: justify;
   font-size: 1rem;
 }
 
-.activities-section .workshop-text {
+.judging-section .workshop-text {
   padding-top: 1rem;
   padding-bottom: 1rem;  
   text-align: justify;
@@ -856,7 +856,7 @@
 }
 
 .details-section .details-text {
-  padding-top: 10rem;
+  padding-top: 12rem;
   text-align: justify;
 }
 

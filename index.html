@@ -52,16 +52,16 @@
               <a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#activities">Activities</a>
+              <a class="nav-link js-scroll-trigger" href="#judging">Judging</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#programme">Programme</a>
+              <a class="nav-link js-scroll-trigger" href="#winners">Winners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#details">Details</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#faq">FAQs</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Organising Team</a>
@@ -87,7 +87,7 @@
           </div>
           <div class="row">
             <div class="apply col-lg-12 col-md-12 col-xs-12 my-2">
-              <h3 class="btn mx-auto mt-2 mb-1">APPLICATIONS CLOSED</h3>
+              <h3 class="btn mx-auto mt-2 mb-1">EVENT COMPLETED</h3>
             </div>
           </div>
         </div>
@@ -273,83 +273,342 @@
       
     </section>
 
-    <section id="activities" class="activities-section bg-light">
+    <section id="judging" class="judging-section bg-light">
       <div class="container">
         <div class="row">
           <div class="col-xl-8 mx-auto">
-            <h2 class="text-center text-uppercase">Activities</h2>
+            <h2 class="text-center text-uppercase">Judging</h2>
           </div>
         </div>
-        <div class="container activities-member">
-          <div class="row my-4 my-lg-5">
-            <div class="col-lg-6">
-              <div class="activities-icon">
-                <!-- <img class="mx-auto rounded-circle" src="img/bg-masthead.jpg" alt=""> -->
-                <i class="fas fa-laptop-code fa-10x"></i>
-              </div>
-            </div>
-            <div class="col-lg-6 featured-text">
-              <h3>
-                Algothon
-              </h3>
-              <p>
-                In the titular event, you will have 24 hours to produce the most innovative algorithm you can. At the end of the 24 hours, all teams will have the opportunity to demonstrate their product in a fair where the judges (and other participants) will go around and see what has been produced. The judges will select their top 6 entrants, who will then be able to give a short presentation to all attendees to showcase their work. Note that this is not only a test of technical performance. For instance, a team who’s product isn’t working well technically but who has a practical plan of implementing it in a real world situation has just as much chance of winning as a team with a well made technical product but no plan for implementing it. The judging panel will consist of world-leading academics. 
-              </p>
-            </div>
-          </div>
-        </div>
-        </div>
-        
+        <h4 class="text-center text-uppercase mt-4">Categories</h4>
         <div class="container">
-          <div class="row my-4 my-lg-5">
-            <div class="col-lg-6">
-              <div class="activities-icon">
-                <!-- <img class="mx-auto rounded-circle" src="img/bg-masthead.jpg" alt=""> -->
-                <i class="fas fa-chalkboard-teacher fa-10x"></i>
-              </div>
-            </div>
-            <div class="col-lg-6 featured-text">
-              <h3>
-                Workshops
-              </h3>
-              <p>
-                We will be running several workshops that we hope will give participants some helpful information on subjects that are unfamiliar to them.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row mt-4 mt-lg-5">
-            <div class="col-lg-6 workshop-text">
+          <div class="row">
+            <div class="col-lg-4 workshop-text">
               <h5 class="text-center">
-                Introduction to Data Science with Python
+                Quandl Challenge
               </h5>
               <p >
-                There is no requirement for your submission to use Python, however as it is one of the most popular languages currently in use for data science, we hope this workshop will get you up to speed on using Python in this context. The workshop will go over the basic syntax of Python, some useful features for working with data, and some of the most popular libraries (NumPy and Pandas). Though we expect that participants in attendance are relatively skilled programmers, we do recommend familiarising yourself with Python before attending this workshop.  
+                The Quandl challenge required particpants to make use of the datasets that were generously provided by Quandl for the Algothon. Apart from the use of the datasets, participants were free to create anything they wanted. 
               </p>
             </div>
-            <div class="col-lg-6 workshop-text">
+            <div class="col-lg-4 workshop-text">
               <h5 class="text-center">
-                Basic Machine Learning with Python
+                Reuters NLP Challenge
               </h5>
               <p>
-                One of the most popular machine learning tools available right now is Tensorflow. This workshop will get you up and running with some sample data, producing  a model, and applying it to get some useful results. This will build upon the previous workshop, however it will be a big jump up if you are new to Python. Before attending, we would recommend installing Tensorflow and running through some examples to ensure that it is working properly. This will not be a workshop covering the theory behind machine learning, so it will be helpful to familiarise yourself with the basics of the topic.
+                The Reuters NLP forcasting challenge supplied participants with a large dataset consisting of the bid and ask prices of a custom ticker over a large date range, as well as more than a decades worth of reuters articles. Participants were required to use the articles to produce a model of the ticker, then forcast its behaviour over the first half of 2018 without using any additional data.
               </p>
+            </div>
+            <div class="col-lg-4 workshop-text">
+              <h5 class="text-center">
+                Freestyle Challenge
+              </h5>
+              <p>
+                The freestyle challenge allowed participants to use any methods or data sources, as long as they did not fall into either of the other categories.
+              </p>
+            </div>
+          </div>
+        </div>
+        <h4 class="text-center text-uppercase mt-4">Criteria</h4>
+        <div class="container judging-member">
+          <div class="row my-4 my-lg-5">
+            
+            <table class="table table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">CRITERIA</th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col">BASE MARKS</th>
+                  <th scope="col">PRESENTATION MARKS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" colspan="3">What is the Alpha gen potential of the tool/model?</th>
+                  <td>7</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="3">How viable is it to fully implement the tool/ model into a real system?</th>
+                  <td>7</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="3">How original is the idea?</th>
+                  <td>7</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="3">How expandable is the idea?​ (More general ideas are better)</th>
+                  <td>7</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="3">How will this performance in different market conditions?</th>
+                  <td>7</td>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h4 class="text-center text-uppercase mt-4">Judges</h4>
+          
+          <div class="row text-center mt-4 mt-lg-5">
+            <div class="col-lg-4 team-member">
+              <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/DrAndreiKirilenko.jpg)"></div>
+              <h4>Dr. Andrei Kirilenko</h4>
+              <p class="text-center text-muted">
+                Director of the Centre for Global Finance and Technology, Imperial College Business School
+              </p>
+            </div>
+            <div class="col-lg-4 team-member">
+              <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/DrAnilBharath.jpeg)"></div>
+              <h4>Dr. Anil Anthony Bharath</h4>
+              <p class="text-center text-muted">
+                Reader, Imperial College London, Fellow of Imperial College Data Science Institute, Co-founder of Cortexica Vision Systems
+              </p>
+            </div>
+            <div class="col-lg-4 team-member">
+              <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/AnneLouiseBurnett.jpg)"></div>
+              <h4>Anne Louise Burnett</h4>
+              <p class="text-center text-muted">
+                Centre Manager for Global Finance and Technology, Imperial College Business School
+              </p>
+            </div>
+          </div>
+          <div class="row text-center mt-4 mt-lg-5">
+            <div class="col-lg-4 team-member">
+              <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/BrendonSmith.jpg)"></div>
+              <h4>Brendon Smith</h4>
+              <p class="text-center text-muted">
+                Managing Director, Head of Alpha Gen Technology within Investment Systems, Aladdin Product Group, BlackRock
+              </p>
+            </div>
+            <div class="col-lg-4 team-member">
+              <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/TomMorris.jpg)"></div>
+              <h4>Tom Morris</h4>
+              <p class="text-center text-muted">
+                Managing Director, Quantitative Hedge Fund Portfolio Manager, BlackRock
+              </p>
+            </div>
+
+            <div class="col-lg-4 team-member">
+              <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/DrGeorgePoyiadjis.jpg)"></div>
+              <h4>Dr. George Poyiadjis</h4>
+              <p class="text-center text-muted">
+                PhD, Director, Lead Researcher of Relative Value strategies for BlackRock's Systematic Fixed Income Group (SFI)
+              </p>
+            </div>
+
+
+          </div>
+          <div class="row text-center mt-4 mt-lg-5">
+            <div class="col-lg-2">
+              
+            </div>
+            <div class="col-lg-4 team-member">
+              <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/DrShwetaAgarwal.jpg)"></div>
+              <h4>Dr. Shweta Agarwal</h4>
+              <p class="text-center text-muted">
+                Vice President, Risk and Quantitative Analysis Group, BlackRock
+              </p>
+            </div>
+            <div class="col-lg-4 team-member">
+              <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/AlexanderRemorov.jpg)"></div>
+              <h4>Alexander Remorov</h4>
+              <p class="text-center text-muted">
+                Researcher, Systematic Active Equities (SAE), BlackRock
+              </p>
+            </div>
+            <div class="col-lg-2">
+              
+            </div>
+          </div>
+          <div class="row text-center mt-4 mt-lg-5">
+            <div class="col-lg-2">
+              
+            </div>
+            <div class="col-lg-4 team-member">
+              <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/JoeArrowsmith.jpg)"></div>
+              <h4>Joe Arrowsmith</h4>
+              <p class="text-center text-muted">
+                Imperial College Algorithmic Trading Society (President)
+              </p>
+            </div>
+            <div class="col-lg-4 team-member">
+              <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/NuriCingillioglu.png)"></div>
+              <h4>Nuri Cingillioglu</h4>
+              <p class="text-center text-muted">
+                Imperial College Algorithmic Trading Society (Head of Trading)
+              </p>
+            </div>
+            <div class="col-lg-2">
+              
             </div>
           </div>
           <br/>
           <hr>
+
         </div>
+
+        
       </div>
     </section>
 
-    <section id="programme" class="programme-section bg-light">
+    <section id="winners" class="judging-section bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
-            <h2 class="text-center text-uppercase mb-4">Programme</h2>
+          <div class="col-xl-8 mx-auto">
+            <h2 class="text-center text-uppercase">Winners</h2>
           </div>
         </div>
+        
+        <div class="container text-center">
+          <h4 class="text-center text-uppercase mt-4">1st Place</h4>
+          <h5 class="text-center text-uppercase mt-4">
+            BlackLENS <a href="https://devpost.com/software/blacklens" target="_blank">
+            <img src="img/devpost-icon.svg" width="30px">
+          </a>
+          </h5>
+
+          <div class="row mt-2">
+            <div class="col-lg-1">
+              
+            </div>
+            <div class="col-lg-10">
+              <img src="img/Event Photos/algothon (3).jpg" width="100%">
+            </div>
+            <div class="col-lg-1">
+              
+            </div>
+          </div>
+
+          <h4 class="text-center text-uppercase mt-4">2nd Place</h4>
+          <br/>
+          <h4 class="text-center text-uppercase">Quandl Challenge Winner</h4>
+          <h5 class="text-center text-uppercase mt-4">
+            AlphaBet <a href="https://devpost.com/software/algothon2018-bh90e2" target="_blank">
+            <img src="img/devpost-icon.svg" width="30px">
+          </a>
+          </h5>
+
+          <div class="row mt-2">
+            <div class="col-lg-1">
+              
+            </div>
+            <div class="col-lg-10">
+              <img src="img/Event Photos/algothon_2nd.jpg" width="100%">
+            </div>
+            <div class="col-lg-1">
+              
+            </div>
+          </div>
+
+
+          <h4 class="text-center text-uppercase mt-4">3rd Place</h4>
+          <h5 class="text-center text-uppercase mt-4">
+            TMT <a href="https://devpost.com/software/robust-momentum-value-adjusted-sentiment-weighted" target="_blank">
+            <img src="img/devpost-icon.svg" width="30px">
+          </a>
+          </h5>
+
+          <div class="row mt-2">
+            <div class="col-lg-1">
+              
+            </div>
+            <div class="col-lg-10">
+              <img src="img/Event Photos/algothon_3rd.jpg" width="100%">
+            </div>
+            <div class="col-lg-1">
+              
+            </div>
+          </div>
+
+
+          <h4 class="text-center text-uppercase mt-4">Reuters NLP Challenge Winner</h4>
+          <h5 class="text-center text-uppercase mt-4">
+            Algothon_Georgeteam <a href="https://devpost.com/software/algothon_georgeteam" target="_blank">
+            <img src="img/devpost-icon.svg" width="30px">
+          </a>
+          </h5>
+
+          <div class="row mt-2">
+            <div class="col-lg-1">
+              
+            </div>
+            <div class="col-lg-10">
+              <img src="img/Event Photos/algothon_reutersNLP.jpg" width="100%">
+            </div>
+            <div class="col-lg-1">
+              
+            </div>
+          </div>
+
+          <h4 class="text-center text-uppercase mt-4 mb-4">Freestyle Challenge Winner</h4>
+          <h5 class="text-center text-uppercase mt-4">
+            Axolotl <a href="https://devpost.com/software/axolotl-framework-for-lifelong-learning-trading-algos" target="_blank">
+            <img src="img/devpost-icon.svg" width="30px">
+          </a>
+          </h5>
+
+          <div class="row mt-2">
+            <div class="col-lg-1">
+              
+            </div>
+            <div class="col-lg-10">
+              <img src="img/Event Photos/algothon_freestyle.jpg" width="100%">
+            </div>
+            <div class="col-lg-1">
+              
+            </div>
+          </div>
+        </div>
+
+        <br/>
+        <hr>
+
+      </div>
+    </section>
+
+    <section id="gallery" class="programme-section bg-light">
+      <div class="container">
+
+        <div class="row mt-3">
+          <div class="col-lg-12">
+            <h2 class="text-center text-uppercase mb-4">Gallery</h2>
+          </div>
+        </div>
+          <div class='lr_embed' style='position: relative; padding-bottom: 50%; height: 0; overflow: hidden;'><iframe id='iframe' src='https://lightroom.adobe.com/embed/shares/1ffab823ebdd49f18f3dce61ce88e5a3/slideshow?backgr ound_color=%23191919&color=%23cccdcd' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' ></iframe></div>
+
+          <br/>
+          <hr>
+        </div>
+                  
+      </div>
+    </section>
+
+    
+
+    <section id="details" class="details-section bg-light">
+      <div class="container">
+        <div class="row mb-4 mb-lg-5">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Details</h2>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.855156008078!2d-0.08906948398943337!3d51.51587327963656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cacb81ef6b9%3A0x111365ccb63cd7d5!2sBlackRock!5e0!3m2!1sen!2sus!4v1534991530326" width="90%" height="150%" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+            <small>
+              <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.855156008078!2d-0.08906948398943337!3d51.51587327963656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cacb81ef6b9%3A0x111365ccb63cd7d5!2sBlackRock!5e0!3m2!1sen!2sus!4v1534991530326"></a>
+            </small> 
+          </div>
+        </div>
+
+        <div class="row mt-5 details-text">
+          <div class="col-lg-12">
+            <h3 class="text-center text-uppercase mb-4">Schedule</h3>
+          </div>
+        </div>
+
         <div class="row">
 
           <div class="col-lg-6">
@@ -518,30 +777,11 @@
             </ul>
           </div>
           </div>
-          <br/>
-          <hr>
-        </div>
-                  
-      </div>
-    </section>
 
-    
+        <!-- <div class="row my-4 my-lg-5 details-text">
 
-    <section id="details" class="details-section bg-light">
-      <div class="container">
-        <div class="row mb-4 mb-lg-5">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Details</h2>
-            <br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.855156008078!2d-0.08906948398943337!3d51.51587327963656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cacb81ef6b9%3A0x111365ccb63cd7d5!2sBlackRock!5e0!3m2!1sen!2sus!4v1534991530326" width="90%" height="150%" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-            <small>
-              <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.855156008078!2d-0.08906948398943337!3d51.51587327963656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cacb81ef6b9%3A0x111365ccb63cd7d5!2sBlackRock!5e0!3m2!1sen!2sus!4v1534991530326"></a>
-            </small> 
-          </div>
-        </div>
-        <div class="row my-4 my-lg-5 details-text">
-          <div class="col-lg-6 mt-2 travel-text">
-            <h4 class="text-uppercase text-center">
+          <div class="col-lg-6 mt-2 travel-text"> -->
+            <!-- <h4 class="text-uppercase text-center">
               Travel
             </h4>
             <p>
@@ -561,10 +801,10 @@
             </p>
             <p>
               There are many guides online for figuring the most cost effective method for you to use on the tube, expect to pay a minimum of £10 for travel within London for the weekend.
-            </p>
-          </div>
-          <div class="col-lg-6 mt-2 food-text">
-            <h4 class="text-uppercase text-center">
+            </p> -->
+<!--           </div>
+          <div class="col-lg-6 mt-2 food-text"> -->
+            <!-- <h4 class="text-uppercase text-center">
               Food
             </h4>
             <p>
@@ -580,9 +820,9 @@
             <p>
               Please refer to this document on health, safety and security house rules for the event:
             </p>
-            <a href="res/Briefing Note for Hackers Oct2018.pdf">Algothon 2018 @ BlackRock - Health, Safety & Security House Rules</a>
-          </div>
-        </div>
+            <a href="res/Briefing Note for Hackers Oct2018.pdf">Algothon 2018 @ BlackRock - Health, Safety & Security House Rules</a> -->
+<!--           </div>
+        </div> -->
         <div class="row my-4 my-lg-5">
           <div class="col-lg-12">
             <h4 class="text-center text-uppercase">
@@ -681,7 +921,7 @@
       </div>
     </section> -->
 
-    <section id="faq" class="faq-section bg-light">
+    <!-- <section id="faq" class="faq-section bg-light">
       <div class="row mx-auto">
         <div class="col-md-10 col-lg-8 mx-auto">
           <h2 class="text-black text-center mb-5">
@@ -829,7 +1069,7 @@
           <hr>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="team" class="team-section bg-light">
       <div class="container organizers-member blackrock-member">
@@ -991,7 +1231,7 @@
             </p>
           </div>
           <div class="col-lg-3 team-member">
-            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/algotrade.png)"></div>
+            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/NuriCingillioglu.png)"></div>
             <h4>Nuri Cingillioglu</h4>
             <p class="text-center text-muted">
               Imperial College Algorithmic Trading Society<br />(Head of Trading)
