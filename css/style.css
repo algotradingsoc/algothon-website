@@ -83,7 +83,6 @@
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: transparent;
     transition: background-color 0.3s ease-in-out;
   }
 
@@ -259,6 +258,16 @@
   font-size: 1rem;
 }
 
+.reloaded-section {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(to bottom, #161616 0% rgba(22,22,22,0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+}
+
+.reloaded-section p{
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
 .map {
   width: auto;
   height: 30rem;
