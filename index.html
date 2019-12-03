@@ -1,0 +1,2570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE-11"/> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Algothon 2019 @ BlackRock - Organised by the Imperial College Algorithmic Trading Society</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <!-- Typekit fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/bpa5smf.css">
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Animate CSS by Daniel Eden -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.min.css" rel="stylesheet">
+
+
+    <link rel="icon" href="icon.png">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <svg id="animated-algothon-logo" style="width: 75px; height: 75px" data-name="Animated Algothon Logo"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 796.4 796.4">
+                    <defs>
+                        <style>
+                            .cls-2 {
+                                fill: transparent;
+                            }
+                        </style>
+                        <linearGradient id="lightGradient">
+                            <stop offset="0%" stop-color="lightblue" stop-opacity=".7">
+                                <animate attributeName="stop-color"
+                                    values="#0000F9;#86007D;purple;black;#FF0018;#FFA52C;#FFFF41;#008018;#008018;"
+                                    dur="14s" repeatCount="indefinite" />
+                            </stop>
+                            <stop offset="100%" stop-color="lightblue" stop-opacity=".7">
+                                <animate attributeName="stop-color"
+                                    values="#008018;#0000F9;#86007D;purple;black;#FF0018;#FFA52C;#FFFF41;#008018"
+                                    dur="14s" repeatCount="indefinite" />
+                            </stop>
+                        </linearGradient>
+                    </defs>
+                    <title>Algothon 2019</title>
+                    <g class="cls-1" fill="url(#lightGradient)" stroke="none ">
+                        <path class="cls-2"
+                            d="M242.38,910.62V114.23h796.4V910.62ZM406.16,737.53,617.31,384.72c-3.19-6.9-16.58-31.52-17.8-32.69-.49.8-1,1.59-1.45,2.38q-12.87,21.49-25.72,43Q548.66,437,525,476.56l-49.82,83.25q-15.21,25.43-30.44,50.83l-46.95,78.48Q383.86,712.31,370,735.51c-.36.59-.66,1.22-1.09,2ZM814.72,636.71Q725.43,470.56,636.63,305.35H597.92c.25.54.4.89.58,1.23q10.62,19.8,21.25,39.6,19.54,36.35,39.08,72.68,18.93,35.2,37.84,70.42L736,562.49q19.49,36.25,39,72.54a2.85,2.85,0,0,0,2.94,1.71c11.47-.06,23,0,34.42,0ZM423.64,737.6h2.56c11,0,22,0,33,0,4.27,0,3.31.81,5.44-3.14.19-.35.4-.69.61-1l18.9-31.54q32.6-54.4,65.2-108.82l33-55.09L633,453.34c3.44-5.75,6.86-11.5,10.36-17.2a2.49,2.49,0,0,0,0-2.91c-1-1.66-1.84-3.37-2.74-5.06q-7.08-13.25-14.16-26.47a15.7,15.7,0,0,0-1-1.43Zm91.88-48.74h367c2.81-3.86,18.59-30.64,18.94-32.2h-2l-12.93,0-115.21,0q-117.3,0-234.59,0a3,3,0,0,0-3,1.71c-5.47,9.24-11,18.43-16.55,27.64ZM663.71,324.44c.4.81.7,1.45,1,2.07l23.73,44.13,29.37,54.64q16.8,31.26,33.59,62.53,15.26,28.37,30.49,56.75Q798,574.5,814.13,604.44c5.46,10.16,10.93,20.31,16.33,30.5a3,3,0,0,0,3.08,1.81c10.75-.07,21.49,0,32.23,0,.7,0,1.4-.06,2.41-.11L700.41,324.44Zm178.5,379.27H755q-123.06,0-246.13,0a3.47,3.47,0,0,0-3.47,1.91c-5.93,10-12,20-18,30-.36.6-.68,1.23-1.13,2,.78.05,1.28.1,1.79.1,7.7,0,15.39.11,23.08.11q46.56,0,93.12,0,107.65,0,215.29,0A3.43,3.43,0,0,0,823,736c5.93-10.05,12-20,17.94-30.06C841.31,705.3,841.66,704.68,842.21,703.71Zm-184-82.57a32.58,32.58,0,0,0,2.45,7,20.79,20.79,0,0,0,14,11.64,38.88,38.88,0,0,0,13,1,26,26,0,0,0,20.53-11.94A42.14,42.14,0,0,0,714.43,612a95.34,95.34,0,0,0,.33-28.52A44.47,44.47,0,0,0,710,567.94c-3.22-5.93-7.95-10.1-14.5-11.89a37.25,37.25,0,0,0-20.8.2c-8.83,2.63-14.62,8.4-16.92,17.35a36.29,36.29,0,0,0,1.3,22.83,21.3,21.3,0,0,0,12.84,12.79,25.56,25.56,0,0,0,15.26.6c4.63-1.18,8.63-3.34,11.38-7.42.08-.12.33-.13.6-.23-.09,1.62-.15,3.14-.28,4.65a40.35,40.35,0,0,1-2.37,11.44,18.06,18.06,0,0,1-4,6.33c-4.58,4.6-15.12,4.69-18-3.84-.19-.56-.47-1.08-.77-1.77ZM604.4,570.48c.43,3.32.28,55.26-.17,56.83H584.05v12.17c3.32.43,55.12.26,56.5-.18V627.24H621.41v-71a5,5,0,0,0-.82-.18c-4.71,0-9.41,0-14.12,0a3.7,3.7,0,0,0-1.83.59c-6.3,4-12.56,8.15-18.87,12.18a2.31,2.31,0,0,0-1.15,2.29c0,3.38,0,6.76,0,10.14,0,.42.08.84.15,1.49Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path
+                            d="M406.16,737.53H368.87c.43-.8.73-1.43,1.09-2q13.89-23.21,27.79-46.39l46.95-78.48q15.23-25.41,30.44-50.83L525,476.56q23.68-39.58,47.38-79.15,12.85-21.5,25.72-43c.47-.79,1-1.58,1.45-2.38,1.22,1.17,14.61,25.79,17.8,32.69Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path
+                            d="M814.72,636.71h-2.39c-11.47,0-23,0-34.42,0A2.85,2.85,0,0,1,775,635q-19.44-36.3-39-72.54l-39.35-73.21q-18.93-35.2-37.84-70.42-19.53-36.35-39.08-72.68-10.63-19.8-21.25-39.6c-.18-.34-.33-.69-.58-1.23h38.71Q725.51,470.68,814.72,636.71Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path
+                            d="M423.64,737.6,625.53,400.27a15.7,15.7,0,0,1,1,1.43q7.1,13.23,14.16,26.47c.9,1.69,1.78,3.4,2.74,5.06a2.49,2.49,0,0,1,0,2.91c-3.5,5.7-6.92,11.45-10.36,17.2L582.38,538l-33,55.09q-32.6,54.42-65.2,108.82l-18.9,31.54c-.21.34-.42.68-.61,1-2.13,3.95-1.17,3.12-5.44,3.14-11,.06-22,0-33,0Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path
+                            d="M515.52,688.86l1.71-2.88c5.52-9.21,11.08-18.4,16.55-27.64a3,3,0,0,1,3-1.71q117.3.06,234.59,0l115.21,0,12.93,0h2c-.35,1.56-16.13,28.34-18.94,32.2Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path
+                            d="M663.71,324.44h36.7L868.18,636.6c-1,0-1.71.1-2.41.11-10.74,0-21.48,0-32.23,0a3,3,0,0,1-3.08-1.81c-5.4-10.19-10.87-20.34-16.33-30.5Q798,574.5,781.92,544.56q-15.24-28.38-30.49-56.75-16.78-31.28-33.59-62.53l-29.37-54.64-23.73-44.13C664.41,325.89,664.11,325.25,663.71,324.44Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path
+                            d="M842.21,703.71c-.55,1-.9,1.59-1.26,2.19-6,10-12,20-17.94,30.06a3.43,3.43,0,0,1-3.43,1.95q-107.64-.07-215.29,0-46.56,0-93.12,0c-7.69,0-15.38-.06-23.08-.11-.51,0-1,0-1.79-.1.45-.81.77-1.44,1.13-2,6-10,12-20,18-30a3.47,3.47,0,0,1,3.47-1.91q123.06.06,246.13,0h87.21Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path
+                            d="M658.17,621.14,673.75,619c.3.69.58,1.21.77,1.77,2.89,8.53,13.43,8.44,18,3.84a18.06,18.06,0,0,0,4-6.33,40.35,40.35,0,0,0,2.37-11.44c.13-1.51.19-3,.28-4.65-.27.1-.52.11-.6.23-2.75,4.08-6.75,6.24-11.38,7.42a25.56,25.56,0,0,1-15.26-.6,21.3,21.3,0,0,1-12.84-12.79,36.29,36.29,0,0,1-1.3-22.83c2.3-9,8.09-14.72,16.92-17.35a37.25,37.25,0,0,1,20.8-.2c6.55,1.79,11.28,6,14.5,11.89a44.47,44.47,0,0,1,4.74,15.49,95.34,95.34,0,0,1-.33,28.52,42.14,42.14,0,0,1-6.21,16.83,26,26,0,0,1-20.53,11.94,38.88,38.88,0,0,1-13-1,20.79,20.79,0,0,1-14-11.64A32.58,32.58,0,0,1,658.17,621.14Zm15.58-38.51a19.4,19.4,0,0,0,1.58,8.82,10.71,10.71,0,0,0,6.43,6.12,12,12,0,0,0,15.54-8.21,22,22,0,0,0,.11-9.86,16.77,16.77,0,0,0-2.52-6.43A10.81,10.81,0,0,0,684,568c-4.38.47-7.24,3-8.92,7A18.12,18.12,0,0,0,673.75,582.63Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path
+                            d="M604.4,570.48l-19.61,12.23c-.07-.65-.15-1.07-.15-1.49,0-3.38,0-6.76,0-10.14a2.31,2.31,0,0,1,1.15-2.29c6.31-4,12.57-8.13,18.87-12.18a3.7,3.7,0,0,1,1.83-.59c4.71,0,9.41,0,14.12,0a5,5,0,0,1,.82.18v71h19.14V639.3c-1.38.44-53.18.61-56.5.18V627.31h20.18C604.68,625.74,604.83,573.8,604.4,570.48Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path class="cls-2"
+                            d="M673.75,582.63a18.12,18.12,0,0,1,1.33-7.68c1.68-4,4.54-6.5,8.92-7a10.81,10.81,0,0,1,10.89,5.09,16.77,16.77,0,0,1,2.52,6.43,22,22,0,0,1-.11,9.86,12,12,0,0,1-15.54,8.21,10.71,10.71,0,0,1-6.43-6.12A19.4,19.4,0,0,1,673.75,582.63Z"
+                            transform="translate(-242.38 -114.23)" />
+                    </g>
+                </svg>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#organisers">Organisers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <!-- <a class="nav-link js-scroll-trigger" href="#judging">Judging</a> -->
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#winners">Winners</a>
+                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#speakers">Details</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#team">Organising Team</a> 
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#gallery">Algothon 2018</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="https://www.linkedin.com/company/algothon/"><i
+                                class="fab fa-linkedin" style="font-size: 1.5rem; margin-top: -0.25rem;"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+        <div class="masthead-background"></div>
+        <div id="masthead-content" class="container d-flex h-100 align-items-center">
+            <div class="container text-center">
+                <!-- <img class="masthead-logo" src="img/icon.png"> -->
+                <svg id="animated-algothon-logo" class="masthead-logo" data-name="Animated Algothon Logo"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 796.4 796.4">
+                    <defs>
+                        <style>
+                            .cls-2 {
+                                fill: transparent;
+                            }
+                        </style>
+                        <linearGradient id="lightGradient">
+                            <stop offset="0%" stop-color="lightblue" stop-opacity=".7">
+                                <animate attributeName="stop-color"
+                                    values="#0000F9;#86007D;purple;black;#FF0018;#FFA52C;#FFFF41;#008018;#008018;"
+                                    dur="14s" repeatCount="indefinite" />
+                            </stop>
+                            <stop offset="100%" stop-color="lightblue" stop-opacity=".7">
+                                <animate attributeName="stop-color"
+                                    values="#008018;#0000F9;#86007D;purple;black;#FF0018;#FFA52C;#FFFF41;#008018"
+                                    dur="14s" repeatCount="indefinite" />
+                            </stop>
+                        </linearGradient>
+                    </defs>
+                    <title>Algothon 2019</title>
+                    <g class="cls-1" fill="url(#lightGradient)" stroke="none ">
+                        <path class="cls-2"
+                            d="M242.38,910.62V114.23h796.4V910.62ZM406.16,737.53,617.31,384.72c-3.19-6.9-16.58-31.52-17.8-32.69-.49.8-1,1.59-1.45,2.38q-12.87,21.49-25.72,43Q548.66,437,525,476.56l-49.82,83.25q-15.21,25.43-30.44,50.83l-46.95,78.48Q383.86,712.31,370,735.51c-.36.59-.66,1.22-1.09,2ZM814.72,636.71Q725.43,470.56,636.63,305.35H597.92c.25.54.4.89.58,1.23q10.62,19.8,21.25,39.6,19.54,36.35,39.08,72.68,18.93,35.2,37.84,70.42L736,562.49q19.49,36.25,39,72.54a2.85,2.85,0,0,0,2.94,1.71c11.47-.06,23,0,34.42,0ZM423.64,737.6h2.56c11,0,22,0,33,0,4.27,0,3.31.81,5.44-3.14.19-.35.4-.69.61-1l18.9-31.54q32.6-54.4,65.2-108.82l33-55.09L633,453.34c3.44-5.75,6.86-11.5,10.36-17.2a2.49,2.49,0,0,0,0-2.91c-1-1.66-1.84-3.37-2.74-5.06q-7.08-13.25-14.16-26.47a15.7,15.7,0,0,0-1-1.43Zm91.88-48.74h367c2.81-3.86,18.59-30.64,18.94-32.2h-2l-12.93,0-115.21,0q-117.3,0-234.59,0a3,3,0,0,0-3,1.71c-5.47,9.24-11,18.43-16.55,27.64ZM663.71,324.44c.4.81.7,1.45,1,2.07l23.73,44.13,29.37,54.64q16.8,31.26,33.59,62.53,15.26,28.37,30.49,56.75Q798,574.5,814.13,604.44c5.46,10.16,10.93,20.31,16.33,30.5a3,3,0,0,0,3.08,1.81c10.75-.07,21.49,0,32.23,0,.7,0,1.4-.06,2.41-.11L700.41,324.44Zm178.5,379.27H755q-123.06,0-246.13,0a3.47,3.47,0,0,0-3.47,1.91c-5.93,10-12,20-18,30-.36.6-.68,1.23-1.13,2,.78.05,1.28.1,1.79.1,7.7,0,15.39.11,23.08.11q46.56,0,93.12,0,107.65,0,215.29,0A3.43,3.43,0,0,0,823,736c5.93-10.05,12-20,17.94-30.06C841.31,705.3,841.66,704.68,842.21,703.71Zm-184-82.57a32.58,32.58,0,0,0,2.45,7,20.79,20.79,0,0,0,14,11.64,38.88,38.88,0,0,0,13,1,26,26,0,0,0,20.53-11.94A42.14,42.14,0,0,0,714.43,612a95.34,95.34,0,0,0,.33-28.52A44.47,44.47,0,0,0,710,567.94c-3.22-5.93-7.95-10.1-14.5-11.89a37.25,37.25,0,0,0-20.8.2c-8.83,2.63-14.62,8.4-16.92,17.35a36.29,36.29,0,0,0,1.3,22.83,21.3,21.3,0,0,0,12.84,12.79,25.56,25.56,0,0,0,15.26.6c4.63-1.18,8.63-3.34,11.38-7.42.08-.12.33-.13.6-.23-.09,1.62-.15,3.14-.28,4.65a40.35,40.35,0,0,1-2.37,11.44,18.06,18.06,0,0,1-4,6.33c-4.58,4.6-15.12,4.69-18-3.84-.19-.56-.47-1.08-.77-1.77ZM604.4,570.48c.43,3.32.28,55.26-.17,56.83H584.05v12.17c3.32.43,55.12.26,56.5-.18V627.24H621.41v-71a5,5,0,0,0-.82-.18c-4.71,0-9.41,0-14.12,0a3.7,3.7,0,0,0-1.83.59c-6.3,4-12.56,8.15-18.87,12.18a2.31,2.31,0,0,0-1.15,2.29c0,3.38,0,6.76,0,10.14,0,.42.08.84.15,1.49Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path
+                            d="M406.16,737.53H368.87c.43-.8.73-1.43,1.09-2q13.89-23.21,27.79-46.39l46.95-78.48q15.23-25.41,30.44-50.83L525,476.56q23.68-39.58,47.38-79.15,12.85-21.5,25.72-43c.47-.79,1-1.58,1.45-2.38,1.22,1.17,14.61,25.79,17.8,32.69Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path
+                            d="M814.72,636.71h-2.39c-11.47,0-23,0-34.42,0A2.85,2.85,0,0,1,775,635q-19.44-36.3-39-72.54l-39.35-73.21q-18.93-35.2-37.84-70.42-19.53-36.35-39.08-72.68-10.63-19.8-21.25-39.6c-.18-.34-.33-.69-.58-1.23h38.71Q725.51,470.68,814.72,636.71Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path
+                            d="M423.64,737.6,625.53,400.27a15.7,15.7,0,0,1,1,1.43q7.1,13.23,14.16,26.47c.9,1.69,1.78,3.4,2.74,5.06a2.49,2.49,0,0,1,0,2.91c-3.5,5.7-6.92,11.45-10.36,17.2L582.38,538l-33,55.09q-32.6,54.42-65.2,108.82l-18.9,31.54c-.21.34-.42.68-.61,1-2.13,3.95-1.17,3.12-5.44,3.14-11,.06-22,0-33,0Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path
+                            d="M515.52,688.86l1.71-2.88c5.52-9.21,11.08-18.4,16.55-27.64a3,3,0,0,1,3-1.71q117.3.06,234.59,0l115.21,0,12.93,0h2c-.35,1.56-16.13,28.34-18.94,32.2Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path
+                            d="M663.71,324.44h36.7L868.18,636.6c-1,0-1.71.1-2.41.11-10.74,0-21.48,0-32.23,0a3,3,0,0,1-3.08-1.81c-5.4-10.19-10.87-20.34-16.33-30.5Q798,574.5,781.92,544.56q-15.24-28.38-30.49-56.75-16.78-31.28-33.59-62.53l-29.37-54.64-23.73-44.13C664.41,325.89,664.11,325.25,663.71,324.44Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path
+                            d="M842.21,703.71c-.55,1-.9,1.59-1.26,2.19-6,10-12,20-17.94,30.06a3.43,3.43,0,0,1-3.43,1.95q-107.64-.07-215.29,0-46.56,0-93.12,0c-7.69,0-15.38-.06-23.08-.11-.51,0-1,0-1.79-.1.45-.81.77-1.44,1.13-2,6-10,12-20,18-30a3.47,3.47,0,0,1,3.47-1.91q123.06.06,246.13,0h87.21Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path
+                            d="M658.17,621.14,673.75,619c.3.69.58,1.21.77,1.77,2.89,8.53,13.43,8.44,18,3.84a18.06,18.06,0,0,0,4-6.33,40.35,40.35,0,0,0,2.37-11.44c.13-1.51.19-3,.28-4.65-.27.1-.52.11-.6.23-2.75,4.08-6.75,6.24-11.38,7.42a25.56,25.56,0,0,1-15.26-.6,21.3,21.3,0,0,1-12.84-12.79,36.29,36.29,0,0,1-1.3-22.83c2.3-9,8.09-14.72,16.92-17.35a37.25,37.25,0,0,1,20.8-.2c6.55,1.79,11.28,6,14.5,11.89a44.47,44.47,0,0,1,4.74,15.49,95.34,95.34,0,0,1-.33,28.52,42.14,42.14,0,0,1-6.21,16.83,26,26,0,0,1-20.53,11.94,38.88,38.88,0,0,1-13-1,20.79,20.79,0,0,1-14-11.64A32.58,32.58,0,0,1,658.17,621.14Zm15.58-38.51a19.4,19.4,0,0,0,1.58,8.82,10.71,10.71,0,0,0,6.43,6.12,12,12,0,0,0,15.54-8.21,22,22,0,0,0,.11-9.86,16.77,16.77,0,0,0-2.52-6.43A10.81,10.81,0,0,0,684,568c-4.38.47-7.24,3-8.92,7A18.12,18.12,0,0,0,673.75,582.63Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path
+                            d="M604.4,570.48l-19.61,12.23c-.07-.65-.15-1.07-.15-1.49,0-3.38,0-6.76,0-10.14a2.31,2.31,0,0,1,1.15-2.29c6.31-4,12.57-8.13,18.87-12.18a3.7,3.7,0,0,1,1.83-.59c4.71,0,9.41,0,14.12,0a5,5,0,0,1,.82.18v71h19.14V639.3c-1.38.44-53.18.61-56.5.18V627.31h20.18C604.68,625.74,604.83,573.8,604.4,570.48Z"
+                            transform="translate(-242.38 -114.23)" />
+                        <path class="cls-2"
+                            d="M673.75,582.63a18.12,18.12,0,0,1,1.33-7.68c1.68-4,4.54-6.5,8.92-7a10.81,10.81,0,0,1,10.89,5.09,16.77,16.77,0,0,1,2.52,6.43,22,22,0,0,1-.11,9.86,12,12,0,0,1-15.54,8.21,10.71,10.71,0,0,1-6.43-6.12A19.4,19.4,0,0,1,673.75,582.63Z"
+                            transform="translate(-242.38 -114.23)" />
+                    </g>
+                </svg>
+                <div class="row" style="margin-top: -3rem;">
+                    <h1 class="text-black mx-auto my-0 text-uppercase">Algothon 2019 @ <img id="masthead-blk-logo"
+                            src="img/blackrock-logo-sitemap.svg"></h1>
+                </div>
+                <div class="row">
+                    <h3 class="text-black mx-auto my-2 text-uppercase">19th - 20th October</h3>
+                </div>
+                <!-- <div class="row">
+                    <h4 class="text-black mx-auto my-2 text-uppercase">Get notified when applications open</h4>
+                </div> -->
+                <!-- <div class="row justify-content-center">
+                    <img id="masthead-blk-logo" src="img/blackrock-logo-sitemap.svg">
+                </div> -->
+                <div class="row justify-content-center">
+                    <div class="btn apply col-lg-6 col-md-10 col-xs-12 my-2 bg-primary">
+                        <a
+                            href="https://www.notion.so/44dee7a386e54dcd8eedef30f540c9d4?v=8f61c073f67b425ead2314a937d4a04d">
+                            <h4 class="mx-auto mt-2 mb-1 text-white">Event Information</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+
+
+    <div id="organisers" class="organizers-section justify-content-center">
+        <div class="container organizers-member blackrock-member">
+            <div class="row justify-content-center">
+                <h2 class="section-title" style="margin-bottom: 2rem;">Organisers</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="row mt-xs-5 mt-md-5 mt-lg-5">
+                    <div class="col-lg-6 col-md-12 col-xs-12 text-center">
+                        <div class="logo mt-xs-2 mt-md-2 mt-lg-5">
+                            <!-- <img class="mx-auto rounded-circle" src="img/bg-masthead.jpg" alt=""> -->
+                            <img class="img-fluid" src="img/algotrade_logo.png" alt="" style="width: 90%;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-5 featured-text">
+                        <p>
+                            The Algorithmic Trading Society was founded in March 2018 with the aim of bringing students
+                            together to develop their understanding of the application algorithms in a financially
+                            driven context.
+                        </p>
+                        <p>
+                            Whether you’re a novice to trading or a veteran Quant, we welcome all Imperial College
+                            students to be part of the society.
+                        </p>
+                        <p>
+                            <a href="https://www.imperialcollegeunion.org/activities/a-to-z/algorithmic-trading"
+                                target="_blank">Join us as a member today!</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-xs-12 text-left">
+                    <div class="logo mt-xs-2 mt-md-2 mt-lg-5 text-center">
+                        <!-- <img class="mx-auto rounded-circle" src="img/bg-masthead.jpg" alt=""> -->
+                        <a href="https://careers.blackrock.com"><img class="" src="img/blackrock-logo-sitemap.svg"
+                                alt="" style="width: 95%; margin-top: 12.5%">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-5 featured-text">
+                    <p>
+                        Since our inception in 1988, BlackRock has grown from an entrepreneurial start-up into the
+                        world’s largest investment manager, with more than $6 trillion of assets under management, by
+                        putting technology and continuous innovation at the heart of our business.
+                    </p>
+                    <p>
+                        We’re delighted to sponsor and host the ‘Algothon 2019 @ BlackRock’ and look forward to meeting
+                        you there!
+                    </p>
+                    <p>
+                        <a href="https://careers.blackrock.com" target="_blank">Learn more about us here</a>
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <a href="https://careers.blackrock.com">
+                        <img src="img/blackrock-qr-code.png" style="width: 90%;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div style="background: #d4dce6;">
+            <div class="container organizers-member blackrock-member">
+                <div class="row justify-content-center" style="padding-top: 1.5rem;">
+                    <h2 class="section-title">Sponsors</h2>
+                </div>
+                <div class="row justify-content-center" style="margin-top: 2rem;">
+                    <div class="row mt-xs-2 mt-md-2 mt-lg-2">
+                        <div class="col-lg-6 col-md-12 col-xs-12 text-center">
+                            <div id="quandl-logo" class="logo">
+                                <!-- <img class="mx-auto rounded-circle" src="img/bg-masthead.jpg" alt=""> -->
+                                <a href="https://www.quandl.com">
+                                    <img class="img-fluid" src="img/Quandl_logo.png" alt=""
+                                        style="width: 25rem; max-width: 85%;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 featured-text sponsor-featured-text d-lg-none">
+                            <p>
+                                Quandl is the premier source for financial, economic, and alternative datasets, serving
+                                investment professionals. Quandl’s platform is used by over 400,000 people, including
+                                analysts from the world’s top hedge funds, asset managers and investment banks.
+                            </p>
+                            <p>
+                                <a href="https://www.quandl.com" target="_blank">Learn more about us here</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-xs-12 text-center">
+                            <div class="logo">
+                                <!-- <img class="mx-auto rounded-circle" src="img/bg-masthead.jpg" alt=""> -->
+                                <a href="https://aws.amazon.com/education/">
+                                    <img class="img-fluid" src="img/AWS_logo.png" alt="" style="width: 15rem;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 featured-text sponsor-featured-text d-lg-none">
+                            <p>
+                                For 12 years, Amazon Web Services has been the world’s most comprehensive and broadly
+                                adopted cloud platform. AWS offers over 125 fully featured services within a worldwide
+                                infrastructure. AWS services are trusted by millions of active customers to power
+                                their infrastructure, make them more agile, and lower costs.
+                            </p>
+                            <p>
+                                <a href="https://aws.amazon.com/education/" target="_blank">Learn more about us here</a>
+                            </p>
+                        </div>
+                        <div class="row" style="margin-top: 2rem;">
+                            <div class="col-6 featured-text sponsor-featured-text d-none d-lg-block">
+                                <p>
+                                    Quandl is the premier source for financial, economic, and alternative datasets,
+                                    serving investment professionals. Quandl’s platform is used by over 400,000 people,
+                                    including analysts from the world’s top hedge funds, asset managers and investment
+                                    banks.
+                                </p>
+                                <p>
+                                    <a href="https://www.quandl.com" target="_blank">Learn more about us here</a>
+                                </p>
+                            </div>
+                            <div class="col-6 featured-text sponsor-featured-text d-none d-lg-block">
+                                <p>
+                                    For 12 years, Amazon Web Services has been the world’s most comprehensive and
+                                    broadly adopted cloud platform. AWS offers over 125 fully featured services within a
+                                    worldwide infrastructure. AWS services are trusted by millions of active customers
+                                    to power
+                                    their infrastructure, make them more agile, and lower costs.
+                                </p>
+                                <p>
+                                    <a href="https://aws.amazon.com/education/" target="_blank">Learn more about us
+                                        here</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 justify-content-center">
+                            <a href="https://www.refinitiv.com/en" target="_blank">
+                                <!-- <div id="refinitiv-logo"></div> -->
+                                <img class="img-fluid" src="img/rfv_lg.png" style="width: 80%; margin-left: 10%">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 featured-text sponsor-featured-text d-lg-none">
+                            <p>
+                                Serving more than 40,000 institutions in approximately 190 countries, Refinitiv provides
+                                information, insights and technology that drive innovation and performance in global
+                                financial markets. Our heritage of integrity enables our customers to make critical
+                                decisions with confidence while our best-in-class data and cutting-edge technologies
+                                enable greater opportunity. </p>
+                            <p>
+                                <a href="https://www.refinitiv.com/en" target="_blank">Learn more about us here</a>
+                            </p>
+                        </div>
+                        <div class="col-md-6 justify-content-center">
+                            <a
+                                href="https://www.imperial.ac.uk/business-school/faculty-research/research-centres/climate-finance-investment/">
+                                <img class="img-fluid" src="img/IB_logo.jpg" alt=""
+                                    style="width:90%; margin-top: 2.5rem; margin-bottom: 1.5rem;">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 featured-text sponsor-featured-text d-lg-none">
+                            <p>
+                                The Centre’s purpose is to unlock solutions within capital markets to address the
+                                challenges posed by global climate change. We execute interdisciplinary research
+                                combining intellectual rigour and industry relevance. Through collaboration between
+                                academics
+                                and practitioners, we are generating a new understanding of the investment opportunity
+                                in renewable energy, clean technologies, and climate-resilient infrastructure.
+                            </p>
+                            <p>
+                                <a href="https://www.imperial.ac.uk/business-school/faculty-research/research-centres/climate-finance-investment/"
+                                    target="_blank">Learn more about us here</a>
+                                <a href="https://twitter.com/ImperialCCFI?s=17">
+                                    <i class="fab fa-twitter"
+                                        style="font-size: 2rem; margin-top: -0.5rem; float: right"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: -2rem;">
+                        <div class="col-6 featured-text sponsor-featured-text d-none d-lg-block">
+                            <p>
+                                Serving more than 40,000 institutions in approximately 190 countries, Refinitiv provides
+                                information, insights and technology that drive innovation and performance in global
+                                financial markets. Our heritage of integrity enables our customers to make critical
+                                decisions with confidence while our best-in-class data and cutting-edge technologies
+                                enable greater opportunity. </p>
+                            <p>
+                                <a href="https://www.refinitiv.com/en" target="_blank">Learn more about us here</a>
+                            </p>
+                        </div>
+                        <div class="col-6 featured-text sponsor-featured-text d-none d-lg-block">
+                            <p>
+                                The Centre’s purpose is to unlock solutions within capital markets to address the
+                                challenges posed by global climate change. We execute interdisciplinary research
+                                combining intellectual rigour and industry relevance. Through collaboration between
+                                academics
+                                and practitioners, we are generating a new understanding of the investment opportunity
+                                in renewable energy, clean technologies, and climate-resilient infrastructure.
+                            </p>
+                            <p>
+                                <a href="https://www.imperial.ac.uk/business-school/faculty-research/research-centres/climate-finance-investment/"
+                                    target="_blank">Learn more about us here</a>
+                                <a href="https://twitter.com/ImperialCCFI?s=17">
+                                    <i class="fab fa-twitter"
+                                        style="font-size: 2rem; margin-top: -0.5rem; float: right"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center d-none" style="border-radius: 0.25rem;">
+                        <div class="col-lg-7 col-md-12 col-xs-12 text-center">
+                            <div id="centre-logo" class="logo">
+                                <!-- <img class="mx-auto rounded-circle" src="img/bg-masthead.jpg" alt=""> -->
+                                <a
+                                    href="https://www.imperial.ac.uk/business-school/faculty-research/research-centres/climate-finance-investment/">
+                                    <img class="img-fluid" src="img/IB_logo.jpg" alt=""
+                                        style="width: 25rem; max-width: 85%; margin-top: 3rem; margin-bottom: 1.5rem;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 featured-text sponsor-featured-text">
+                            <p>
+                                The Centre’s purpose is to unlock solutions within capital markets to address the
+                                challenges posed by global climate change. We execute interdisciplinary research
+                                combining intellectual rigour and industry relevance. Through collaboration between
+                                academics
+                                and practitioners, we are generating a new understanding of the investment opportunity
+                                in renewable energy, clean technologies, and climate-resilient infrastructure.
+                            </p>
+                            <p>
+                                <a href="https://www.imperial.ac.uk/business-school/faculty-research/research-centres/climate-finance-investment/"
+                                    target="_blank">Learn more about us here</a>
+                                <a href="https://twitter.com/ImperialCCFI?s=17">
+                                    <i class="fab fa-twitter"
+                                        style="font-size: 2rem; margin-top: -0.5rem; float: right"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center d-none">
+                        <div class="col-lg-2 d-none">
+                            <!-- <div class="sponsor-member">
+              <div class="circle-avatar" style="background-image:url(img/unknown.png); opacity: 0.7; border: 2px solid gray"></div>
+            </div> -->
+                        </div>
+                        <!-- <div class="col-lg-4">
+                    <div class="sponsor-member">
+                        <div class="circle-avatar" style="background-image:url(img/AWS_logo.png)"></div>
+                    </div>
+                </div> -->
+                        <div class="col-lg-8">
+                            <div class="sponsor-member">
+                                <a href="https://www.imperial.ac.uk/business-school/faculty-research/research-centres/climate-finance-investment/"
+                                    target="_blank">
+                                    <img style="width: 100%;height: 100%; border: none;" src="img/IB_logo.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 d-none">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section id="about" class="about-section">
+                <div class="container justify-content-center">
+                    <h2 class="section-title mb-4 text-center">About</h2>
+                    <div class="row">
+                        <div class="col-xl-6 col-sm-12">
+                            <img id="collage-photo" src="img/Event Photos/co.jpg"
+                                style="margin-bottom: 2rem; max-width: 100%;">
+                        </div>
+                        <div class="col-xl-6 col-sm-12 mx-auto">
+                            <p>
+                                Algothon 2019 in partnership with BlackRock is the second annual Algothon organised by
+                                the Imperial College Algorithmic Trading Society. We’re excited to bring you 24 hours of
+                                intense hacking, bringing 200 of the brightest minds together to produce incredible
+                                new financial technology.</p>
+                            <p>
+                                The event will be held in the offices of BlackRock, one of the most highly respected
+                                financial technology companies operating today. In addition to the main event, we’re
+                                delighted to offer several talks from field leading researchers in machine learning,
+                                as well as workshops to get you up to speed on some of the most exciting new
+                                technologies and practices in the field.</p>
+                            <p>
+                                This will be an incredible weekend, producing amazing new technologies, learning from
+                                some of the best minds in the field, and overall having a great time!
+                            </p>
+
+                        </div>
+                    </div>
+                    <!-- <img src="img/ipad.png" class="img-fluid" alt=""> -->
+                </div>
+            </section>
+
+            <!-- speaker modals -->
+            <!-- Modal -->
+            <div class="modal fade" id="rui_carvalho_info" tabindex="-1" role="dialog"
+                aria-labelledby="rui_carvalho_info" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Dr Rui Carvalho</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="speaker-member">
+                                        <img class="circle-avatar align-self-center"
+                                            style="background-image:url(img/speakers/rui_carvalho.jpg)">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 speaker-member-info">
+                                    <h4 class="">Dr Rui Carvalho</h4>
+                                    <p class="text-muted">Assistant Professor <br> Department of Engineering, Durham
+                                        University</p>
+                                    <h5 class="speaker-talk-title">Extracting Governing Equations from Data</h5>
+                                    <p>
+                                        <strong>Abstract: </strong> Over the centuries, scientists have sought to
+                                        describe natural phenomena with mechanistic models. In the last century, we have
+                                        also made tremendous progress in building powerful non-mechanistic
+                                        models, from linear regression to random forests and neural networks. However,
+                                        although data are nowadays abundant in many areas of science and engineering,
+                                        models often remain elusive. I will introduce the toolbox
+                                        of sparse regression and illustrate how it can extract parsimonious models from
+                                        data. I will give the examples of charging electric vehicles and automating the
+                                        discovery of governing equations from data. I will
+                                        also discuss how to use statistical tools to ensure that the extracted
+                                        mathematical models are reliable. <br>
+                                        <br> <strong>Bio: </strong> Rui Carvalho is an Assistant Professor in the
+                                        Department of Engineering, Durham University. His research focuses on the
+                                        integration of methods of convex optimization and statistical machine
+                                        learning. He joined Durham in 2015 from the Statistical Laboratory, University
+                                        of Cambridge, where he was a Senior Research Associate. He obtained a PhD in
+                                        Theoretical Physics from Instituto Superior Técnico, Lisbon,
+                                        Portugal in 2001. He has been a Researcher Co-Investigator on EPSRC grants
+                                        totalling over £1.1M, is a member of the EPSRC Peer Review College, and has
+                                        acted as a panel member in four EPSRC calls. Rui Carvalho’s
+                                        research has been reviewed in Nature News, MIT Technology Review and
+                                        [Phys.org](http://phys.org/).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="anil_bharath_info" tabindex="-1" role="dialog"
+                aria-labelledby="anil_bharath_info" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Prof Anil Bharath</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="speaker-member">
+                                        <img class="circle-avatar align-self-center"
+                                            style="background-image:url(img/speakers/anil_bharath.jpg)">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 speaker-member-info">
+                                    <h4 class="">Prof Anil Bharath</h4>
+                                    <p class="text-muted">Fellow of the Institute of Engineering and Technology<br>
+                                        Imperial College London</p>
+                                    <h5 class="speaker-talk-title">Fireside Chat: Explainable Machine Learning</h5>
+                                    <p>
+                                        <strong>Bio: </strong>Anil Anthony Bharath (Fellow of the Institute of
+                                        Engineering & Technology) is Professor of Biologically-Inspired Computation &
+                                        Inference at Imperial College. He holds a first degree from UCL
+                                        (Elec Eng) and a PhD from Imperial College London. From 2011-2014, he was
+                                        Associate Director of the Imperial Institute for Security Science & Technology.
+                                        He subsequently joined the research board of the Data Sciences
+                                        Institute (2014-2018). Motivated by discovering parallels between biological and
+                                        machine intelligence, his current research interests are around architectures of
+                                        convolutional neural networks; his lab has recently
+                                        published on generative adversarial networks and deep reinforcement learning for
+                                        visuo-motor control. He is academic founder of Cortexica Vision Systems, a
+                                        company that applies parallel computing for fast indexing
+                                        and retrieval of visual data for commercial applications of "visual search” –
+                                        the ability to query very large databases based on visual appearance. Cortexica
+                                        was the first company to provide commercial visual search
+                                        services using cloud-based GPU architectures. Anil’s research group
+                                        (Biologically-Inspired Computation and Inference) in the Department of
+                                        Bioengineering works on biologically-inspired algorithm development, including
+                                        artificial neural networks. Anil and his team have authored or co-authored
+                                        papers in the areas of deep learning and computer vision, and have worked on the
+                                        applications of these techniques to a wide variety of domains,
+                                        including medical, non-medical and microscopy. He has acted as Associate Editor
+                                        for Neural Networks, and as reviewer for Pattern Recognition, IEEE Transactions
+                                        on Neural Networks and IEEE Transactions on Image Processing.
+                                        With the late Maria Petrou, he co-edited Next Generation Artificial Vision
+                                        Systems: Reverse Engineering the Human Visual System.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="heishiro_info" tabindex="-1" role="dialog" aria-labelledby="heishiro_info"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Heishiro Kanagawa</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="speaker-member">
+                                        <img class="circle-avatar align-self-center"
+                                            style="background-image:url(img/speakers/heishiro.png)">
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 speaker-member-info">
+                                    <h4 class="">Heishiro Kanagawa</h4>
+                                    <p class="text-muted">PhD Student in Machine Learning<br> Gatsby Computational
+                                        Neuroscience Unit, UCL</p>
+                                    <h5 class="speaker-talk-title">An Interpretable Test of Model Comparison</h5>
+                                    <p>
+                                        <strong>Abstract: </strong>Recent advances in machine learning have provided
+                                        effective generative models for very complex and high-dimensional data. A
+                                        question of practical interest is how we should choose an appropriate
+                                        model from a set of competing models. In this talk, I will present a solution to
+                                        this problem: an interpretable test of model comparison. Given two models, our
+                                        test enables us to check what one model is better than
+                                        the other in terms of the fit to data; e.g., in image generation, what kind of
+                                        images is a model better at generating than the other?
+                                        <br><strong>Bio: </strong>Heishiro Kanagawa is a graduate student pursuing a PhD
+                                        in machine learning at Gatsby Computational Neuroscience Unit, University
+                                        College London. He received BSc and MSc from Tokyo Institute
+                                        of Technology. His research focus has been on the evaluation of complex
+                                        generative models.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="modal-footer">
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <section id="speakers" class="speakers-section bg-light">
+                <div class="container">
+                    <div class="row mb-4 mb-lg-5">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading section-title">Speakers</h2>
+                            <br />
+                            <p>
+                                We’re incredibly happy to be offering talks from some of the industry's leading
+                                researchers in the field of machine learning.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="speaker-member">
+                                <img class="circle-avatar align-self-center"
+                                    style="background-image:url(img/speakers/rui_carvalho.jpg)">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 speaker-member-info">
+                            <h4 class="">Dr Rui Carvalho</h4>
+                            <p class="text-muted">Assistant Professor <br> Department of Engineering, Durham University
+                            </p>
+                            <h5 class="speaker-talk-title">Extracting Governing Equations from Data</h5>
+                            <a href="" data-toggle="modal" data-target="#rui_carvalho_info">
+                                <h6>Read more</h6>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="speaker-member">
+                                <img class="circle-avatar align-self-center"
+                                    style="background-image:url(img/speakers/anil_bharath.jpg)">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 speaker-member-info">
+                            <h4 class="">Prof Anil A. Bharath</h4>
+                            <p class="text-muted">Fellow of the Institute of Engineering and Technology<br> Imperial
+                                College London</p>
+                            <h5 class="speaker-talk-title">Fireside Chat: Explainable Machine Learning</h5>
+                            <a href="" data-toggle="modal" data-target="#anil_bharath_info">
+                                <h6>Read more</h6>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="speaker-member">
+                                <img class="circle-avatar align-self-center"
+                                    style="background-image:url(img/speakers/ana.jpg)">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 speaker-member-info">
+                            <h4 class="">Dr Anastasiya Ostrovnaya</h4>
+                            <p class="text-muted">Research Fellow at Centre for Climate Finance & Investment<br>
+                                Imperial College London</p>
+                            <!-- <h5 class="speaker-talk-title">Fireside Chat: Explainable Machine Learning</h5> -->
+                            <!-- <a href="" data-toggle="modal" data-target="#anil_bharath_info">
+                                <h6>Read more</h6>
+                            </a> -->
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="speaker-member">
+                                <img class="circle-avatar align-self-center"
+                                    style="background-image:url(img/speakers/heishiro.png)">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 speaker-member-info">
+                            <h4 class="">Heishiro Kanagawa</h4>
+                            <p class="text-muted">PhD Student in Machine Learning<br> Gatsby Computational Neuroscience
+                                Unit, UCL</p>
+                            <h5 class="speaker-talk-title">An Interpretable Test of Model Comparison</h5>
+                            <a href="" data-toggle="modal" data-target="#heishiro_info">
+                                <h6>Read more</h6>
+                            </a>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="speaker-member">
+                                <img class="circle-avatar align-self-center"
+                                    style="background-image:url(img/speakers/ignacio.jpg)">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 speaker-member-info">
+                            <h4 class="">Ignacio Blanch</h4>
+                            <p class="text-muted">Managing Director, Head of Research and Innovation Team for Systematic
+                                Fixed Income Group (SFI)<br><img class="text-blk-logo"
+                                    src="img/blackrock-logo-sitemap.svg"></p>
+                            <!-- <h5 class="speaker-talk-title">Fireside Chat: Explainable Machine Learning</h5> -->
+                            <!-- <a href="" data-toggle="modal" data-target="#anil_bharath_info">
+                                <h6>Read more</h6>
+                            </a> -->
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="speaker-member">
+                                <img class="circle-avatar align-self-center"
+                                    style="background-image:url(img/speakers/justin.jpg)">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 speaker-member-info">
+                            <h4 class="">Justin R. Peterson</h4>
+                            <p class="text-muted">Director, Investment Researcher, Multi-Asset Strategies<br><img
+                                    class="text-blk-logo" src="img/blackrock-logo-sitemap.svg"></p>
+                            <!-- <h5 class="speaker-talk-title">Fireside Chat: Explainable Machine Learning</h5> -->
+                            <!-- <a href="" data-toggle="modal" data-target="#anil_bharath_info">
+                                <h6>Read more</h6>
+                            </a> -->
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="speaker-member">
+                                <img class="circle-avatar align-self-center"
+                                    style="background-image:url(img/speakers/alexander.jpg)">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 speaker-member-info">
+                            <h4 class="">Dr Alexander Remorov</h4>
+                            <p class="text-muted">Vice President, Quantitative Researcher at Systematic Active Equities
+                                (SAE)<br><img class="text-blk-logo" src="img/blackrock-logo-sitemap.svg"></p>
+                            <!-- <h5 class="speaker-talk-title">Fireside Chat: Explainable Machine Learning</h5> -->
+                            <!-- <a href="" data-toggle="modal" data-target="#anil_bharath_info">
+                                <h6>Read more</h6>
+                            </a> -->
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="speaker-member">
+                                <img class="circle-avatar align-self-center"
+                                    style="background-image:url(img/speakers/george.jpg)">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 speaker-member-info">
+                            <h4 class="">Dr George Poyiadjis</h4>
+                            <p class="text-muted">Director, Lead Researcher of Relative Value Strategies at Systematic
+                                Fixed Income Group (SFI)<br><img class="text-blk-logo"
+                                    src="img/blackrock-logo-sitemap.svg"></p>
+                            <!-- <h5 class="speaker-talk-title">Fireside Chat: Explainable Machine Learning</h5> -->
+                            <!-- <a href="" data-toggle="modal" data-target="#anil_bharath_info">
+                                <h6>Read more</h6>
+                            </a> -->
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="speaker-member">
+                                <img class="circle-avatar align-self-center"
+                                    style="background-image:url(img/speakers/nicky.jpg)">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 speaker-member-info">
+                            <h4 class="">Nicky Lai</h4>
+                            <p class="text-muted">Risk & Quantitative Analysis (RQA), Behavioural Finance
+                                Team<br>Accredited Financial Risk Manager (FRM)<br><img class="text-blk-logo"
+                                    src="img/blackrock-logo-sitemap.svg"></p>
+                            <!-- <h5 class="speaker-talk-title">Fireside Chat: Explainable Machine Learning</h5> -->
+                            <!-- <a href="" data-toggle="modal" data-target="#anil_bharath_info">
+                                <h6>Read more</h6>
+                            </a> -->
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                <div class="col-lg-4">
+                    <div class="speaker-member blk">
+                        <div class="circle-avatar" style="background-image:url(img/DrShwetaAgarwal.jpg)"></div>
+                        <h4 class="text-center">Dr. Shweta Agarwal</h4>
+                        <p class="text-muted"><a href="https://uk.linkedin.com/in/shweta-agarwal-8a862b13">Dr. Shweta Agarwal</a> is Vice President for the Risk and Quantitative Analysis Group at BlackRock.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                </div>
+            </div> -->
+                    <!-- <h4 class="section-title" style="text-align: center; margin: 2rem 0;">More speakers coming soon!</h4> -->
+                    <hr>
+                </div>
+
+            </section>
+
+            <!-- <section id="judging" class="judging-section bg-light d-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 mx-auto">
+                    <h2 class="text-center text-uppercase">Judging</h2>
+                </div>
+            </div>
+            <h4 class="text-center text-uppercase mt-4">Categories</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 workshop-text">
+                        <h5 class="text-center">
+                            Quandl Challenge
+                        </h5>
+                        <p>
+                            The Quandl challenge required particpants to make use of the datasets that were generously provided by Quandl for the Algothon. Apart from the use of the datasets, participants were free to create anything they wanted.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 workshop-text">
+                        <h5 class="text-center">
+                            Reuters NLP Challenge
+                        </h5>
+                        <p>
+                            The Reuters NLP forcasting challenge supplied participants with a large dataset consisting of the bid and ask prices of a custom ticker over a large date range, as well as more than a decades worth of reuters articles. Participants were required to use
+                            the articles to produce a model of the ticker, then forcast its behaviour over the first half of 2019 without using any additional data.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 workshop-text">
+                        <h5 class="text-center">
+                            Freestyle Challenge
+                        </h5>
+                        <p>
+                            The freestyle challenge allowed participants to use any methods or data sources, as long as they did not fall into either of the other categories.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-center text-uppercase mt-4">Criteria</h4>
+            <div class="container judging-member">
+                <div class="row my-4 my-lg-5">
+
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">CRITERIA</th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col">BASE MARKS</th>
+                                <th scope="col">PRESENTATION MARKS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" colspan="3">What is the Alpha gen potential of the tool/model?</th>
+                                <td>7</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="3">How viable is it to fully implement the tool/ model into a real system?</th>
+                                <td>7</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="3">How original is the idea?</th>
+                                <td>7</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="3">How expandable is the idea?​ (More general ideas are better)</th>
+                                <td>7</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" colspan="3">How will this performance in different market conditions?</th>
+                                <td>7</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h4 class="text-center text-uppercase mt-4">Judges</h4>
+
+                <div class="row text-center mt-4 mt-lg-5">
+                    <div class="col-lg-4 team-member">
+                        <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/DrAndreiKirilenko.jpg)"></div>
+                        <h4>Dr. Andrei Kirilenko</h4>
+                        <p class="text-center text-muted">
+                            Director of the Centre for Global Finance and Technology, Imperial College Business School
+                        </p>
+                    </div>
+                    <div class="col-lg-4 team-member">
+                        <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/DrAnilBharath.jpeg)"></div>
+                        <h4>Dr. Anil Anthony Bharath</h4>
+                        <p class="text-center text-muted">
+                            Reader, Imperial College London, Fellow of Imperial College Data Science Institute, Co-founder of Cortexica Vision Systems
+                        </p>
+                    </div>
+                    <div class="col-lg-4 team-member">
+                        <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/AnneLouiseBurnett.jpg)"></div>
+                        <h4>Anne Louise Burnett</h4>
+                        <p class="text-center text-muted">
+                            Centre Manager for Global Finance and Technology, Imperial College Business School
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-center mt-4 mt-lg-5">
+                    <div class="col-lg-4 team-member">
+                        <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/BrendonSmith.jpg)"></div>
+                        <h4>Brendon Smith</h4>
+                        <p class="text-center text-muted">
+                            Managing Director, Head of Alpha Gen Technology within Investment Systems, Aladdin Product Group, BlackRock
+                        </p>
+                    </div>
+                    <div class="col-lg-4 team-member">
+                        <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/TomMorris.jpg)"></div>
+                        <h4>Tom Morris</h4>
+                        <p class="text-center text-muted">
+                            Managing Director, Quantitative Hedge Fund Portfolio Manager, BlackRock
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 team-member">
+                        <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/DrGeorgePoyiadjis.jpg)"></div>
+                        <h4>Dr. George Poyiadjis</h4>
+                        <p class="text-center text-muted">
+                            PhD, Director, Lead Researcher of Relative Value strategies for BlackRock's Systematic Fixed Income Group (SFI)
+                        </p>
+                    </div>
+
+
+                </div>
+                <div class="row text-center mt-4 mt-lg-5">
+                    <div class="col-lg-2">
+
+                    </div>
+                    <div class="col-lg-4 team-member">
+                        <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/DrShwetaAgarwal.jpg)"></div>
+                        <h4>Dr. Shweta Agarwal</h4>
+                        <p class="text-center text-muted">
+                            Vice President, Risk and Quantitative Analysis Group, BlackRock
+                        </p>
+                    </div>
+                    <div class="col-lg-4 team-member">
+                        <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/AlexanderRemorov.jpg)"></div>
+                        <h4>Alexander Remorov</h4>
+                        <p class="text-center text-muted">
+                            Researcher, Systematic Active Equities (SAE), BlackRock
+                        </p>
+                    </div>
+                    <div class="col-lg-2">
+
+                    </div>
+                </div>
+                <div class="row text-center mt-4 mt-lg-5">
+                    <div class="col-lg-2">
+
+                    </div>
+                    <div class="col-lg-4 team-member">
+                        <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/JoeArrowsmith.jpg)"></div>
+                        <h4>Joe Arrowsmith</h4>
+                        <p class="text-center text-muted">
+                            Imperial College Algorithmic Trading Society (President)
+                        </p>
+                    </div>
+                    <div class="col-lg-4 team-member">
+                        <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/algotrade.png)"></div>
+                        <h4>Nuri Cingillioglu</h4>
+                        <p class="text-center text-muted">
+                            Imperial College Algorithmic Trading Society (Head of Trading)
+                        </p>
+                    </div>
+                    <div class="col-lg-2">
+
+                    </div>
+                </div>
+                <br/>
+                <hr>
+
+            </div>
+
+
+        </div>
+    </section> -->
+
+            <!-- <section id="winners" class="judging-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 mx-auto">
+                    <h2 class="text-center text-uppercase">Winners</h2>
+                </div>
+            </div>
+
+            <div class="container text-center">
+                <h4 class="text-center text-uppercase mt-4">1st Place</h4>
+                <h5 class="text-center text-uppercase mt-4">
+                    BlackLENS
+                    <a href="https://devpost.com/software/blacklens" target="_blank">
+                        <img src="img/devpost-icon.svg" width="30px">
+                    </a>
+                </h5>
+
+                <div class="row mt-2">
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-10">
+                        <img src="img/Event Photos/algothon (3).jpg" width="100%">
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                </div>
+
+                <h4 class="text-center text-uppercase mt-4">2nd Place</h4>
+                <br/>
+                <h4 class="text-center text-uppercase">Quandl Challenge Winner</h4>
+                <h5 class="text-center text-uppercase mt-4">
+                    AlphaBet
+                    <a href="https://devpost.com/software/algothon2019-bh90e2" target="_blank">
+                        <img src="img/devpost-icon.svg" width="30px">
+                    </a>
+                </h5>
+
+                <div class="row mt-2">
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-10">
+                        <img src="img/Event Photos/algothon_2nd.jpg" width="100%">
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                </div>
+
+
+                <h4 class="text-center text-uppercase mt-4">3rd Place</h4>
+                <h5 class="text-center text-uppercase mt-4">
+                    TMT
+                    <a href="https://devpost.com/software/robust-momentum-value-adjusted-sentiment-weighted" target="_blank">
+                        <img src="img/devpost-icon.svg" width="30px">
+                    </a>
+                </h5>
+
+                <div class="row mt-2">
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-10">
+                        <img src="img/Event Photos/algothon_3rd.jpg" width="100%">
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                </div>
+
+
+                <h4 class="text-center text-uppercase mt-4">Reuters NLP Challenge Winner</h4>
+                <h5 class="text-center text-uppercase mt-4">
+                    Algothon_Georgeteam
+                    <a href="https://devpost.com/software/algothon_georgeteam" target="_blank">
+                        <img src="img/devpost-icon.svg" width="30px">
+                    </a>
+                </h5>
+
+                <div class="row mt-2">
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-10">
+                        <img src="img/Event Photos/algothon_reutersNLP.jpg" width="100%">
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                </div>
+
+                <h4 class="text-center text-uppercase mt-4 mb-4">Freestyle Challenge Winner</h4>
+                <h5 class="text-center text-uppercase mt-4">
+                    Axolotl
+                    <a href="https://devpost.com/software/axolotl-framework-for-lifelong-learning-trading-algos" target="_blank">
+                        <img src="img/devpost-icon.svg" width="30px">
+                    </a>
+                </h5>
+
+                <div class="row mt-2">
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-10">
+                        <img src="img/Event Photos/algothon_freestyle.jpg" width="100%">
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                </div>
+                <br/>
+                <hr>
+                <br/>
+                <h4 class="text-center text-uppercase mt-4 mb-4">All Algothon 2019 Submissions</h4>
+                <h5 class="text-center text-uppercase mt-4">
+                    <a href="https://algothon-2019.devpost.com/" target="_blank">
+                        <img src="img/devpost-icon.svg" width="80px">
+                    </a>
+                </h5>
+                <br/>
+                <hr>
+
+            </div>
+
+        </div>
+    </section>-->
+
+            <section id="details" class="details-section bg-light">
+                <div class="container">
+                    <!-- <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading section-title">Event Details</h2>
+                </div>
+            </div> -->
+                    <div class="row justify-content-center mb-3 d-none">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-prizes-tab" data-toggle="pill" href="#pills-prizes"
+                                    role="tab" aria-controls="pills-prizes" aria-selected="true">Prizes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">Workshops</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                                    role="tab" aria-controls="pills-contact" aria-selected="false">Datasets</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row justify-content-center mb-3 d-none">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-prizes" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <div class="card mb-3">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <img src="img/Event Photos/algothon (3).jpg" class="card-img" alt="iPad">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">A few "small" prizes are up for grabs:</h5>
+                                                <p class="card-text">
+                                                    - iPad Pros & pen <br> - 4k monitors<br> - Bose wireless
+                                                    noise-cancelling headphones <br> - Extreme Dodgems <br> - Coral TPUs
+                                                    Dev Boards <br> - Google Nests <br> - $7.5k AWS credits</p>
+                                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">...</div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">...</div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h3 class="text-center section-title mb-3">Prizes</h3>
+                        <div class="card mb-4">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="img/Event Photos/algothon (3).jpg" class="card-img" alt="">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h4 class="card-title section-title">A few "small" prizes are up for grabs:</h4>
+                                        <p class="card-text">
+                                            - iPad Pros & pen <br> - 4k monitors<br> - Bose wireless noise-cancelling
+                                            headphones <br> - Extreme Dodgems <br> - Coral TPUs Dev Boards <br> - Google
+                                            Nests <br> - $7.5k AWS credits</p>
+                                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h3 class="text-center section-title mb-3">Workshops</h3>
+                        <div class="card mb-4">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="img/Event Photos/workshopphoto.jpg" class="card-img" alt="">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h4 class="card-title section-title">Algothon Workshops:</h4>
+                                        <p class="card-text" style="font-size: 135%; margin-top: 2rem;">
+                                            1. Introduction to Machine Learning <br> 2. Introduction to Tensorflow
+                                            Probability </br>
+                                            <a href="https://github.com/Joearrowsmith/Algothon_2019_Workshops">
+                                                <h5>
+                                                    Github Page
+                                                </h5>
+                                            </a>
+                                            <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h3 class="text-center section-title mb-3">Themes and Example Datasets</h3>
+                        <div class="card mb-4">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="img/bg-masthead1.jpg" class="card-img" alt="">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            <strong class="section-title">Theme 1: Climate-driven models</strong><br> -
+                                            Quandl: End of Day US Stock Prices, Global Supply Chain Relationships <br> -
+                                            Refinitiv: ESG datasets<br>
+                                            <strong class="section-title">Theme 2: Supply Chain networks</strong><br> -
+                                            Quandl: Global Supply Chain Relationships, Supplier Implied Risk Attributes,
+                                            Trading Economics<br>
+                                            <strong class="section-title">Theme 3: Social sentiment based
+                                                models</strong><br> - Quandl: Social Media Analytics
+                                            <br> - Refinitiv: Aggregated News & Social Media Sentiment, Reuters News
+                                            Archive
+                                        </p>
+                                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                    </div>
+                                    <!-- <div class="card-body" style="position: absolute; margin-top: -8rem; float:right; z-index: 5;">
+                                <h1 class="card-title section-title">To be announced!</h1>
+                            </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rowdetails-text">
+                        <div class="col-lg-12">
+                            <h2 class="text-center section-title">Schedule</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-6">
+
+                            <h3 id="day1" class="text-lg-center mb-4 section-title">Day 1</h3>
+                            <ul class="cbp_tmtimeline">
+                                <li>
+                                    <time class="cbp_tmtime" datetime="2019-20-10 09:00">
+                                        <!-- <span>Day 1</span> --> <span>09:00</span></time>
+                                    <div class="cbp_tmicon"><i class="material-icons">how_to_reg</i></div>
+                                    <div class="cbp_tmlabel">
+                                        <h2>Registration & Setup</h2>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <time class="cbp_tmtime" datetime="2019-20-10 10:30">
+                                        <!-- <span>Day 1</span> --> <span>10:30</span></time>
+                                    <div class="cbp_tmicon"><i class="material-icons">chat_bubble_outline</i></div>
+                                    <div class="cbp_tmlabel">
+                                        <h2>Welcome Talk</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time class="cbp_tmtime" datetime="2019-20-10 10:30">
+                                        <!-- <span>Day 1</span> --> <span>11:30</span></time>
+                                    <div class="cbp_tmicon"><i class="material-icons">emoji_people</i></div>
+                                    <div class="cbp_tmlabel">
+                                        <h2>Team Formation</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time class="cbp_tmtime" datetime="2019-20-10 12:00">
+                                        <!-- <span>Day 1</span> --> <span>12:00</span></time>
+                                    <div class="cbp_tmicon"><i class="material-icons">code</i></div>
+                                    <div class="cbp_tmlabel">
+                                        <h2>Hacking Begins!</h2>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <time class="cbp_tmtime" datetime="2019-20-10 12:45">
+                                        <!-- <span>Day 1</span> --> <span>12:45</span></time>
+                                    <div class="cbp_tmicon"><i class="material-icons">fastfood</i></div>
+                                    <div class="cbp_tmlabel">
+                                        <h2>Lunch</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cbp_tmicon"><i class="material-icons">chat_bubble_outline</i></div>
+                                    <div class="cbp_tmlabel cbp_tmlesslabel">
+                                        <h2>Researcher Presentations</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cbp_tmicon"><i class="material-icons">forum</i></div>
+                                    <div class="cbp_tmlabel cbp_tmlesslabel">
+                                        <h2>Fireside Chat: Explainable AI</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cbp_tmicon"><i class="material-icons">work</i></div>
+                                    <div class="cbp_tmlabel cbp_tmlesslabel">
+                                        <h2>Workshops</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time class="cbp_tmtime" datetime="2019-20-10 19:00">
+                                        <!-- <span>Day 1</span> --> <span>19:00</span></time>
+                                    <div class="cbp_tmicon"><i class="material-icons">fastfood</i></div>
+                                    <div class="cbp_tmlabel">
+                                        <h2>Dinner</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time class="cbp_tmtime" datetime="2019-20-10 21:00">
+                                        <!-- <span>Day 1</span> --> <span>21:00</span></time>
+                                    <div class="cbp_tmicon"><i class="material-icons">sports_tennis</i></div>
+                                    <div class="cbp_tmlabel">
+                                        <h2>King of the (Table Tennis) Table</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time class="cbp_tmtime" datetime="2019-20-10 22:00">
+                                        <!-- <span>Day 1</span> --> <span>22:00</span></time>
+                                    <div class="cbp_tmicon"><i class="material-icons">flag</i></div>
+                                    <div class="cbp_tmlabel">
+                                        <h2>Hackathon Decathlon</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time class="cbp_tmtime" datetime="2019-20-10 23:00">
+                                        <!-- <span>Day 1</span> --> <span>23:00</span></time>
+                                    <div class="cbp_tmicon"><i class="material-icons">nights_stay</i></div>
+                                    <div class="cbp_tmlabel">
+                                        <h2>Sleep Area Opens (with Airbeds)</h2>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 id="day2" class="text-lg-center mb-4 section-title">Day 2</h3>
+                            <ul class="cbp_tmtimeline">
+                                <li>
+                                    <time class="cbp_tmtime" datetime="2019-21-10 00:00">
+                                        <!-- <span>Day 2</span> --> <span>00:00</span></time>
+                                    <div class="cbp_tmicon"><i class="material-icons">local_pizza</i></div>
+                                    <div class="cbp_tmlabel">
+                                        <h2>Midnight Pizza</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time class="cbp_tmtime" datetime="2019-21-10 08:00">
+                                        <!-- <span>Day 2</span> --> <span>08:00</span></time>
+                                    <div class="cbp_tmicon"><i class="material-icons">restaurant</i></div>
+                                    <div class="cbp_tmlabel">
+                                        <h2>Breakfast</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time class="cbp_tmtime" datetime="2019-21-10 12:00">
+                                        <!-- <span>Day 2</span> --> <span>12:00</span></time>
+                                    <div class="cbp_tmicon"><i class="material-icons">code</i></div>
+                                    <div class="cbp_tmlabel">
+                                        <h2>Hacking Ends</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cbp_tmicon"><i class="material-icons">fastfood</i></div>
+                                    <div class="cbp_tmlabel cbp_tmlesslabel">
+                                        <h2>Lunch & Demo Preparation</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time class="cbp_tmtime" datetime="2019-21-10 13:00">
+                                        <!-- <span>Day 2</span> --> <span>13:00</span></time>
+                                    <div class="cbp_tmicon"><i class="material-icons">assessment</i></div>
+                                    <div class="cbp_tmlabel">
+                                        <h2>Judging and Finalist Selection</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time class="cbp_tmtime" datetime="2019-21-10 14:30">
+                                        <!-- <span>Day 2</span> --> <span>14:30</span></time>
+                                    <div class="cbp_tmicon"><i class="material-icons">chat_bubble_outline</i></div>
+                                    <div class="cbp_tmlabel">
+                                        <h2>BlackRock Q&A</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time class="cbp_tmtime" datetime="2019-21-10 15:00">
+                                        <!-- <span>Day 2</span> --> <span>15:00</span></time>
+                                    <div class="cbp_tmicon"><i class="material-icons">assessment</i></div>
+                                    <div class="cbp_tmlabel">
+                                        <h2>Finalists Presentations</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time class="cbp_tmtime" datetime="2019-21-10 16:35">
+                                        <!-- <span>Day 2</span> --> <span>16:35</span></time>
+                                    <div class="cbp_tmicon"><i class="material-icons">emoji_events</i></div>
+                                    <div class="cbp_tmlabel">
+                                        <h2>Prizes & Awards Ceremony</h2>
+                                    </div>
+                                </li>
+                                <li>
+                                    <time class="cbp_tmtime" datetime="2019-21-10 16:45">
+                                        <!-- <span>Day 2</span> --> <span>16:45</span></time>
+                                    <div class="cbp_tmicon"><i class="material-icons">school</i></div>
+                                    <div class="cbp_tmlabel">
+                                        <h2>Closing Remarks</h2>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center" style="margin-bottom: 13.5rem; height: 15rem;">
+                        <div class="col-lg-12">
+                            <h2 class="text-center mb-4 section-title">Location</h2>
+                        </div>
+                        <br>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.855156008078!2d-0.08906948398943337!3d51.51587327963656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cacb81ef6b9%3A0x111365ccb63cd7d5!2sBlackRock!5e0!3m2!1sen!2sus!4v1534991530326"
+                            width="90%" height="150%" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+                        <small>
+                            <a
+                                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.855156008078!2d-0.08906948398943337!3d51.51587327963656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cacb81ef6b9%3A0x111365ccb63cd7d5!2sBlackRock!5e0!3m2!1sen!2sus!4v1534991530326"></a>
+                        </small>
+                    </div>
+
+                    <!-- <div class="row my-4 my-lg-5 details-text">
+
+          <div class="col-lg-6 mt-2 travel-text"> -->
+                    <!-- <h4 class="text-uppercase text-center">
+              Travel
+            </h4>
+            <p>
+              We don’t recommend driving in as finding parking in the centre of London is very difficult. BlackRock’s office is at Drapers Gardens, 12 Throgmorton Avenue, London, EC2N 2DL. The closest tube stations are Moorgate, Liverpool Street, and Bank.  
+            </p>
+            <p>
+              Moorgate services the Circle, Hammersmith and City, Metropolitan, and Northern lines. 
+            </p>
+            <p>
+              Liverpool Street services the Central, Circle, Hammersmith and City, and Metropolitan lines
+            </p>
+            <p>
+              Bank services the Central, Northern, and Waterloo & City lines. 
+            </p>
+            <p>
+              Google Maps is your friend for finding your way around London! 
+            </p>
+            <p>
+              There are many guides online for figuring the most cost effective method for you to use on the tube, expect to pay a minimum of £10 for travel within London for the weekend.
+            </p> -->
+                    <!--           </div>
+          <div class="col-lg-6 mt-2 food-text"> -->
+                    <!-- <h4 class="text-uppercase text-center">
+              Food
+            </h4>
+            <p>
+              We will be providing constant snacks and drinks throughout the weekend. 
+            </p>
+            <p>
+              For meals, lunch and dinner on Saturday, as well as breakfast and lunch on Sunday will be provided. We’ll also have several food breaks spread throughout the weekend, expect some midnight pizza! 
+            </p>
+            <br/>
+            <h4 class="text-uppercase text-center">
+              Health, Safety & Security
+            </h4>
+            <p>
+              Please refer to this document on health, safety and security house rules for the event:
+            </p>
+            <a href="res/Briefing Note for Hackers Oct2019.pdf">Algothon 2019 @ BlackRock - Health, Safety & Security House Rules</a> -->
+                    <!--           </div>
+        </div> -->
+                    <div class="row my-4 my-lg-5">
+                        <div class="col-lg-12">
+                            <h3 class="text-center section-title">
+                                Code of Conduct
+                            </h3>
+                            <br>
+                            <div class="jumbotron code-of-conduct-text">
+                                <p>
+                                    <strong>TL;DR:</strong>
+                                    <i>
+                                        Be respectful to all involved in or present at the event. Harassment and abuse
+                                        are never tolerated. If you are in a situation that makes you uncomfortable at
+                                        this event or directly in relation to this event, if the event itself is
+                                        creating an unsafe or inappropriate environment, or if interacting with any
+                                        person(s) involved in or present at the event makes you uncomfortable, please
+                                        report it using the procedures under this section.
+                                    </i>
+                                    <a href="" data-toggle="modal" data-target="#code-of-conduct">
+                                        <h6 style="margin-bottom: 0;">Read more</h6>
+                                    </a>
+                                </p>
+                                <!-- <hr>
+                        <p>
+                            We believe that every single person has the right to participate and hack in a safe and welcoming environment.
+                            <p>
+                                Harassment includes but is not limited to offensive verbal or written comments related to gender, age, sexual orientation, disability, physical appearance, body size, race, religion, social class, economic status, veteran status, sexual images, deliberate
+                                intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention. If what you’re doing is making someone
+                                feel uncomfortable, that counts as harassment and is enough reason to stop doing it.
+                            </p>
+                            <p>
+                                Any person(s) involved in or present at the event asked to stop any harassing behaviour are expected to comply immediately.
+                            </p>
+                            <p>
+                                Judges, mentors, volunteers, organizers, staff, and anyone else involved in or present at the event are also subject to the anti-harassment policy. In particular, attendees should not use sexualised images, activities, or other material both in their
+                                hacks and during the event. Staff (including volunteers) should not use sexualised clothing/uniforms/costumes, or otherwise create a sexualised environment.
+                            </p>
+                            <p>
+                                If a participant engages in harassing behaviour, the organizers may take any action it deems appropriate, including warning the offender or expulsion from the event with no eligibility for reimbursement or refund of any type.
+                            </p>
+                            <p>
+                                If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of the organizing committee present at the event either in person or through email to the committee.
+                            </p>
+                            <p>
+                                The organizing committee will be happy to help participants contact campus security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the event. We value your attendance.
+                            </p>
+                            <p>
+                                We expect participants to follow these rules at the event venue, online interactions in relation to the event, event-related social events, and on supplied transportation if any.
+                            </p>
+                            <p>
+                                <strong>Reporting Procedures</strong>
+                            </p>
+                            <p>
+                                If you feel uncomfortable or think there may be a potential violation of the code of conduct, please report it immediately to a member of the organizing committee present at the event or through email to the organizing committee at
+                                <a href="mailto:algo.trade@imperial.ac.uk">algo.trade@imperial.ac.uk</a>. All reporters have the right to remain anonymous.
+                            </p>
+                            <p>
+                                <strong>Terms and Conditions</strong>
+                            </p>
+                            <p>
+                                The organizers reserve the right to revise, make exceptions to, or otherwise amend these policies in whole or in part. If you have any questions regarding the code of conduct for this event, please contact the organizing committee by email at
+                                <a href="mailto:algo.trade@imperial.ac.uk">algo.trade@imperial.ac.uk</a>.
+                            </p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </section>
+            <!--code of conduct modal-->
+            <div class="modal fade" id="code-of-conduct" tabindex="-1" role="dialog" aria-labelledby="code-of-conduct"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="code-of-conduct-title">Code of Conduct</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                We believe that every single person has the right to participate and hack in a safe and
+                                welcoming environment.
+                                <p>
+                                    Harassment includes but is not limited to offensive verbal or written comments
+                                    related to gender, age, sexual orientation, disability, physical appearance, body
+                                    size, race, religion, social class, economic status, veteran status, sexual images,
+                                    deliberate
+                                    intimidation, stalking, following, harassing photography or recording, sustained
+                                    disruption of talks or other events, inappropriate physical contact, and unwelcome
+                                    sexual attention. If what you’re doing is making someone
+                                    feel uncomfortable, that counts as harassment and is enough reason to stop doing it.
+                                </p>
+                                <p>
+                                    Any person(s) involved in or present at the event asked to stop any harassing
+                                    behaviour are expected to comply immediately.
+                                </p>
+                                <p>
+                                    Judges, mentors, volunteers, organizers, staff, and anyone else involved in or
+                                    present at the event are also subject to the anti-harassment policy. In particular,
+                                    attendees should not use sexualised images, activities, or other material both in
+                                    their
+                                    hacks and during the event. Staff (including volunteers) should not use sexualised
+                                    clothing/uniforms/costumes, or otherwise create a sexualised environment.
+                                </p>
+                                <p>
+                                    If a participant engages in harassing behaviour, the organizers may take any action
+                                    it deems appropriate, including warning the offender or expulsion from the event
+                                    with no eligibility for reimbursement or refund of any type.
+                                </p>
+                                <p>
+                                    If you are being harassed, notice that someone else is being harassed, or have any
+                                    other concerns, please contact a member of the organizing committee present at the
+                                    event either in person or through email to the committee.
+                                </p>
+                                <p>
+                                    The organizing committee will be happy to help participants contact campus security
+                                    or local law enforcement, provide escorts, or otherwise assist those experiencing
+                                    harassment to feel safe for the duration of the event. We value your attendance.
+                                </p>
+                                <p>
+                                    We expect participants to follow these rules at the event venue, online interactions
+                                    in relation to the event, event-related social events, and on supplied
+                                    transportation if any.
+                                </p>
+                                <p>
+                                    <strong>Reporting Procedures</strong>
+                                </p>
+                                <p>
+                                    If you feel uncomfortable or think there may be a potential violation of the code of
+                                    conduct, please report it immediately to a member of the organizing committee
+                                    present at the event or through email to the organizing committee at
+                                    <a href="mailto:algo.trade@imperial.ac.uk">algo.trade@imperial.ac.uk</a>. All
+                                    reporters have the right to remain anonymous.
+                                </p>
+                                <p>
+                                    <strong>Terms and Conditions</strong>
+                                </p>
+                                <p>
+                                    The organizers reserve the right to revise, make exceptions to, or otherwise amend
+                                    these policies in whole or in part. If you have any questions regarding the code of
+                                    conduct for this event, please contact the organizing committee by email at
+                                    <a href="mailto:algo.trade@imperial.ac.uk">algo.trade@imperial.ac.uk</a>.
+                                </p>
+                        </div>
+                        <!-- <div class="modal-footer">
+                </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Projects Section -->
+            <!-- <section id="projects" class="projects-section bg-light">
+      <div class="container"> -->
+
+            <!-- Project One Row -->
+            <!-- <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white">Misty</h4>
+                  <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+            <!-- Project Two Row -->
+            <!-- <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">Mountains</h4>
+                  <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+
+            <section id="faq" class="faq-section bg-light">
+                <div class="row mx-auto">
+                    <div class="col-md-9 mx-auto">
+                        <h2 class="text-black section-title text-center mb-5">
+                            FAQs
+                        </h2>
+                        <div class="container mt-10 col-xl-9">
+                            <div class="panel-group" id="faq-accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                                data-parent="#faq-accordion" href="#collapseOne10" aria-expanded="true"
+                                                aria-controls="collapseOne10">
+                                                What is a hackathon?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne10" class="panel-collapse collapse in" role="tabpanel"
+                                        aria-labelledby="headingOne10">
+                                        <div class="panel-body">
+                                            <p>A hackathon is a 24-hour competition where programmers and researchers
+                                                come together to build and design something cool.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                                data-parent="#faq-accordion" href="#collapseTwo10" aria-expanded="false"
+                                                aria-controls="collapseTwo10">
+                                                What is Algothon?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo10" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingTwo10">
+                                        <div class="panel-body">
+                                            <p>It is the largest student-led financial machine learning hackathon in
+                                                Europe.
+                                                <br /> The competition is 24 hours of innovation to design the best
+                                                alpha-gen models using the latest machine learning and quant techniques
+                                                inside BlackRock's London office.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                                data-parent="#faq-accordion" href="#collapseThree10"
+                                                aria-expanded="false" aria-controls="collapseThree10">
+                                                Who is eligible?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree10" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingThree10">
+                                        <div class="panel-body">
+                                            <p>Any students, academics and recent graduates over 18 are welcome to
+                                                apply. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                                data-parent="#faq-accordion" href="#collapseFour10"
+                                                aria-expanded="false" aria-controls="collapseThree10">
+                                                Do I need to be studying at Imperial College London?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFour10" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingFour10">
+                                        <div class="panel-body">
+                                            <p>No, students, academics and recent grads are welcome from any university.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading4">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                                data-parent="#faq-accordion" href="#collapse4" aria-expanded="false"
+                                                aria-controls="collapseThree10">
+                                                Do I need a background in finance?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse4" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="heading4">
+                                        <div class="panel-body">
+                                            <p>No. Whilst financial knowledge can be beneficial, it is not necessary.
+                                                <br /> You will learn most of the core knowledge from event through
+                                                researcher presentations, workshops, and the Algothon team.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading5">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                                data-parent="#faq-accordion" href="#collapse5" aria-expanded="false"
+                                                aria-controls="collapseThree10">
+                                                Do I need to be able to code?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse5" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="heading5">
+                                        <div class="panel-body">
+                                            <p>Yes. Having a knowledge of basic coding principles is important to
+                                                implement your strategies and research. However, if you need help on the
+                                                day feel free to reach out through the support system!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading6">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                                data-parent="#faq-accordion" href="#collapse6" aria-expanded="false"
+                                                aria-controls="collapseThree10">
+                                                Do I need to have a team beforehand?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse6" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="heading6">
+                                        <div class="panel-body">
+                                            <p>No, but you are welcome to form one. Last year, many teams were formed in
+                                                the event after meeting and sharing ideas and goals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading-7">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                                data-parent="#faq-accordion" href="#collapse7" aria-expanded="false"
+                                                aria-controls="collapseThree10">
+                                                What is the maximum team size?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse7" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="heading7">
+                                        <div class="panel-body">
+                                            <p>Teams of up to 4 are allowed.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading-8">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                                data-parent="#faq-accordion" href="#collapse8" aria-expanded="false"
+                                                aria-controls="collapseThree10">
+                                                What do I need to bring?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse8" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="heading8">
+                                        <div class="panel-body">
+                                            <p>Your ID, a laptop and a charger are essential. We will email
+                                                recommendations before the weekend.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading-9">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                                data-parent="#faq-accordion" href="#collapse9" aria-expanded="false"
+                                                aria-controls="collapseThree10">
+                                                Where is the event?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse9" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="heading9">
+                                        <div class="panel-body">
+                                            <p>Inside the BlackRock office. Address: Drapers Gardens, 12 Throgmorton
+                                                Avenue, London EC2N 2DL.
+                                                <br /> Closest tube stations are Moorgate, Bank, and Cannon Street.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading-13">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                                data-parent="#faq-accordion" href="#collapse13" aria-expanded="false"
+                                                aria-controls="collapseThree10">
+                                                Will you reimburse travel?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse13" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="heading3">
+                                        <div class="panel-body">
+                                            <p>Yes with in reason. We will be reimbursing travel inside the UK for
+                                                journeys from outside of London. For questions about travel from other
+                                                locations, this is done on a per case basis. Please email: <a
+                                                    href="mailto:algo.trade@imperial.ac.uk">algo.trade@imperial.ac.uk</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading-10">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                                data-parent="#faq-accordion" href="#collapse10" aria-expanded="false"
+                                                aria-controls="collapseThree10">
+                                                Can I volunteer at the event?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse10" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="heading10">
+                                        <div class="panel-body">
+                                            <p>Yes, volunteers are very welcome. Just email <a
+                                                    href="mailto:algo.trade@imperial.ac.uk">algo.trade@imperial.ac.uk</a>
+                                                if you are interested.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading-11">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                                data-parent="#faq-accordion" href="#collapse11" aria-expanded="false"
+                                                aria-controls="collapseThree10">
+                                                When will applications close?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse11" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="heading11">
+                                        <div class="panel-body">
+                                            <p>Applications are reviewed on a rolling basis and will close on the 14th
+                                                of October 18:00.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading-12">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                                data-parent="#faq-accordion" href="#collapse12" aria-expanded="false"
+                                                aria-controls="collapseThree10">
+                                                Any other questions?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse12" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="heading12">
+                                        <div class="panel-body">
+                                            <p>Please email <a
+                                                    href="mailto:algo.trade@imperial.ac.uk">algo.trade@imperial.ac.uk</a>.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-black jumbotron d-none">
+                            <h4>
+                                Q. What is a hackathon?
+                            </h4>
+                            <p>
+                                A hackathon is a 24-hour competition where programmers and researchers come together to
+                                build and design something cool.
+                                <h4>
+                                    Q. What is Algothon?
+                                </h4>
+                                <p>
+                                    It is the largest student-led financial machine learning hackathon in Europe.</p>
+                                <p>
+                                    The competition is 24 hours of innovation to design the best alpha-gen models using
+                                    the latest machine learning and quant techniques inside BlackRock's London office.
+                                </p>
+                                <h4>
+                                    Q. Who is eligible?
+                                </h4>
+                                <p>
+                                    Any students, academics and recent graduates over 18 are welcome to apply.
+                                </p>
+                                <h4>
+                                    Q. Do I need a background in finance?
+                                </h4>
+                                <p>
+                                    No. Whilst financial knowledge can be beneficial, it is not necessary.
+                                </p>
+                                <p>
+                                    You will learn most of the core knowledge from event through researcher
+                                    presentations, workshops, and the Algothon team.
+                                </p>
+                                <h4>
+                                    Q. Do I need to be able to code?
+                                </h4>
+                                <p>
+                                    Yes. Having a knowledge of basic coding principles is important to implement your
+                                    strategies and research. However, if you need help on the day feel free to reach out
+                                    through the support system! </p>
+                                <h4>
+                                    Q. Do I need to have a team beforehand?
+                                </h4>
+                                <p>
+                                    No, but you are welcome to form one. Last year, many teams were formed in the event
+                                    after meeting and sharing ideas and goals. </p>
+                                <h4>
+                                    Q. What is the maximum team size?
+                                </h4>
+                                <p>
+                                    Teams of up to 4 are allowed. </p>
+                                <h4>
+                                    Q. What do I need to bring?
+                                </h4>
+                                <p>
+                                    Your ID, a laptop and a charger are essential. We will email recommendations before
+                                    the weekend.
+                                </p>
+                                <h4>
+                                    Q. Where is the event?
+                                </h4>
+                                <p>
+                                    Inside the BlackRock office. Address: Drapers Gardens, 12 Throgmorton Avenue, London
+                                    EC2N 2DL.
+                                </p>
+                                <p> Closest tube stations are Moorgate, Bank, and Cannon Street. </p>
+                                <h4>
+                                    Q. Can I volunteer at the event?
+                                </h4>
+                                <p>
+                                    Yes, volunteers are very welcome. Just email <a
+                                        href="mailto:algo.trade@imperial.ac.uk">algo.trade@imperial.ac.uk</a> if you are
+                                    interested.
+                                </p>
+                                <h4>
+                                    Q. When will applications close?
+                                </h4>
+                                <p>
+                                    Applications are reviewed on a rolling basis and will close on the 15th of October
+                                    23:59.
+                                </p>
+                                <h4>
+                                    Q. Any other questions?
+                                </h4>
+                                <p>
+                                    Please email <a
+                                        href="mailto:algo.trade@imperial.ac.uk">algo.trade@imperial.ac.uk</a>.
+                                </p>
+                        </div>
+                        <br />
+                        <hr>
+                    </div>
+                </div>
+            </section>
+
+            <section id="team" class="team-section bg-light">
+                <div class="container organizers-member blackrock-member">
+                    <div class="row text-center">
+                        <div class="col-lg-12">
+                            <h2 class="section-title">Organising Team</h2>
+                            <h4 class="section-title">Core Team</h4>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-4 mt-lg-5 justify-content-center">
+                        <div class="col-lg-6 team-member">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/JoeArrowsmith.jpg)">
+                            </div>
+                            <h4>Joe Arrowsmith <a href="https://www.linkedin.com/in/joearrowsmith" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a></h4>
+                            <p class="text-center text-muted">
+                                Imperial College Algorithmic Trading Society<br />(Chairman)
+                            </p>
+                        </div>
+                        <div class="col-lg-6 team-member">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/BrendonSmith.jpg)">
+                            </div>
+                            <h4>Brendon Smith <a href="https://www.linkedin.com/in/brendonsmith99/" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a></h4>
+                            <p class="text-center text-muted">
+                                MD Sponsor, Alpha Gen Portfolio Manager, BlackRock
+                            </p>
+                        </div>
+                        <div class="col-lg-6 team-member">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/oosman.jpg)"></div>
+                            <h4>Ozgur Osman <a href="https://www.linkedin.com/in/ozgurosman/" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a></h4>
+                            <p class="text-center text-muted">
+                                BlackRock organiser, T cost model specialist
+                            </p>
+                        </div>
+                        <div class="col-lg-6 team-member">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/AlfonsoParra.jpg)">
+                            </div>
+                            <h4>Alfonso Parra Garcia <a
+                                    href="https://www.linkedin.com/in/alfonso-parra-garcía-553b05133" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a></h4>
+                            <p class="text-center text-muted">
+                                Imperial College Algorithmic Trading Society<br />(President)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-1 mt-lg-2 d-none">
+                        <div class="col-lg-4 team-member">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/dreti.jpg)"></div>
+                            <h4>David Reti<a href="https://www.linkedin.com/in/davidreti/" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a></h4>
+                            <p class="text-center text-muted">
+                                BlackRock Sponsor Team
+                            </p>
+                        </div>
+                        <div class="col-lg-3 team-member">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/pkovacs1.jpg)">
+                            </div>
+                            <h4>Peter Kovacs</h4>
+                            <p class="text-center text-muted">
+                                BlackRock Sponsor Team
+                            </p>
+                        </div>
+                        <div class="col-lg-3 team-member">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/oosman.jpg)"></div>
+                            <h4>Ozzy Osman</h4>
+                            <p class="text-center text-muted">
+                                BlackRock Sponsor Team
+                            </p>
+                        </div>
+                        <div class="col-lg-3 team-member">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/vanandar.jpg)">
+                            </div>
+                            <h4>Vishaal Anandaraman</h4>
+                            <p class="text-center text-muted">
+                                BlackRock Sponsor Team
+                            </p>
+                        </div>
+                        <div class="col-lg-3 team-member">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/dlalwani.jpg)">
+                            </div>
+                            <h4>Hanish Lalwani</h4>
+                            <p class="text-center text-muted">
+                                BlackRock Crew
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-1 mt-lg-2 d-none">
+
+                        <div class="col-lg-3 team-member">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/krumbles.jpg)">
+                            </div>
+                            <h4>Katie Rumbles</h4>
+                            <p class="text-center text-muted">
+                                BlackRock Recruiting
+                            </p>
+                        </div>
+                        <div class="col-lg-3 team-member">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/rvirdi.jpg)"></div>
+                            <h4>Rush Virdi</h4>
+                            <p class="text-center text-muted">
+                                BlackRock Event Manager
+                            </p>
+                        </div>
+                        <div class="col-lg-3 team-member">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/aradburn.jpg)">
+                            </div>
+                            <h4>Alyssia Radburnd</h4>
+                            <p class="text-center text-muted">
+                                BlackRock Event Manager
+                            </p>
+                        </div>
+                        <div class="col-lg-3 team-member">
+                            <div class="circle-avatar mt-4 mt-lg-3"
+                                style="background-image:url(img/blackRock_logo.svg)"></div>
+                            <h4>Jocelyn Toppin</h4>
+                            <p class="text-center text-muted">
+                                BlackRock Building Operations Manager
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-1 mt-lg-2 d-none">
+                        <div class="col-lg-4 team-member-s">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/anclark.jpg)"></div>
+                            <h4>Andrew Clark</h4>
+                            <p class="text-center text-muted">
+                                BlackRock AV Manager
+                            </p>
+                        </div>
+                        <div class="col-lg-4 team-member-s">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/lgaffar.jpg)"></div>
+                            <h4>Leon Gaffar</h4>
+                            <p class="text-center text-muted">
+                                BlackRock IT Manager
+                            </p>
+                        </div>
+                        <div class="col-lg-4 team-member-s">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/rgoodall.jpg)">
+                            </div>
+                            <h4>Robbie Goodall</h4>
+                            <p class="text-center text-muted">
+                                BlackRock Reception Manager
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-1 mt-lg-2 mb-5 d-none">
+                        <div class="col-lg-4 team-member-s">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/LaurynasKazys.jpg)">
+                            </div>
+                            <h4>Laurynas Kazys</h4>
+                            <p class="text-center text-muted">
+                                BlackRock Crew
+                            </p>
+                        </div>
+                        <div class="col-lg-4 team-member-s">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/WillKennerley.jpg)">
+                            </div>
+                            <h4>Will Kennerley</h4>
+                            <p class="text-center text-muted">
+                                BlackRock Crew
+                            </p>
+                        </div>
+                        <div class="col-lg-4 team-member-s">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/ambrben.jpg)"></div>
+                            <h4>Ben Ambrose</h4>
+                            <p class="text-center text-muted">
+                                BlackRock Reception Manager
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-1 mt-lg-2 d-none">
+                        <div class="col-lg-3 team-member">
+                            <div class="circle-avatar mt-4 mt-lg-3"
+                                style="background-image:url(img/SamuelMartinFrias.jpg)"></div>
+                            <h4>Samuel Martin Frias <a href="https://www.linkedin.com/in/samuelmartinfrias"
+                                    target="_blank"><i class="fab fa-linkedin"></i></a></h4>
+                            <p class="text-center text-muted">
+                                Imperial College Algorithmic Trading Society<br />(Treasurer)
+                            </p>
+                        </div>
+                        <div class="col-lg-3 team-member">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/AlfonsoParra.jpg)">
+                            </div>
+                            <h4>Alfonso Parra Garcia <a
+                                    href="https://www.linkedin.com/in/alfonso-parra-garcía-553b05133" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a></h4>
+                            <p class="text-center text-muted">
+                                Imperial College Algorithmic Trading Society<br />(Secretary)
+                            </p>
+                        </div>
+                        <div class="col-lg-3 team-member">
+                            <div class="circle-avatar mt-4 mt-lg-3"
+                                style="background-image:url(img/MichaelAkintunde.jpg)"></div>
+                            <h4>Michael Akintunde <a href="https://www.linkedin.com/in/michael-akintunde-a8815a106/"
+                                    target="_blank"><i class="fab fa-linkedin"></i></a></h4>
+                            <p class="text-center text-muted">
+                                Imperial College Algorithmic Trading Society<br />(Analyst)
+                            </p>
+                        </div>
+                        <div class="col-lg-3 team-member">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/algotrade.png)">
+                            </div>
+                            <h4>Nuri Cingillioglu</h4>
+                            <p class="text-center text-muted">
+                                Imperial College Algorithmic Trading Society<br />(Head of Trading)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row text-center mt-1 mt-lg-2 mb-5 d-none">
+                        <div class="col-lg-4 team-member-s">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/KaavyaSridhar.jpg)">
+                            </div>
+                            <h4>Kaavya Sridhar <a href="https://www.linkedin.com/in/kaavya-sridhar-965738a5"
+                                    target="_blank"><i class="fab fa-linkedin"></i></a></h4>
+                            <p class="text-center text-muted">
+                                Imperial College Algorithmic Trading Society<br />(Marketing and Events)
+                            </p>
+                        </div>
+                        <div class="col-lg-4 team-member-s">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/FangfangHu.jpg)">
+                            </div>
+                            <h4>Fangfang Hu <a href="https://www.linkedin.com/in/fangfanghu" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a></h4>
+                            <p class="text-center text-muted">
+                                Imperial College Algorithmic Trading Society<br />(Technology: Front-End)
+                            </p>
+                        </div>
+                        <div class="col-lg-4 team-member-s">
+                            <div class="circle-avatar mt-4 mt-lg-3" style="background-image:url(img/EdwardStables.jpg)">
+                            </div>
+                            <h4>Edward Stables <a href="https://www.linkedin.com/in/edward-stables-23224a13a"
+                                    target="_blank"><i class="fab fa-linkedin"></i></a></h4>
+                            <p class="text-center text-muted">
+                                Imperial College Algorithmic Trading Society<br />(Technology: Back-End)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Signup Section -->
+            <!--     <section id="signup" class="signup-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+            <i class="far fa-paper-plane fa-2x mb-2 text-black"></i>
+            <h2 class="text-black mb-5">Subscribe to receive updates</h2>
+
+            <form class="form-inline d-flex">
+              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+              <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+            <!-- gallery section -->
+            <section id="gallery" class="programme-section bg-light">
+                <div class="container">
+
+                    <div class="row mt-3">
+                        <div class="col-lg-12">
+                            <h2 class="text-center mb-5 section-title">Algothon 2018</h2>
+                        </div>
+                    </div>
+                    <div style='position: relative; padding-bottom: 90%; height: 0; overflow: hidden;'><iframe
+                            id='iframe' src='https://algothon2018.myportfolio.com/algothon-2018-highlights'
+                            frameborder='0'
+                            style='width:100%; height:100%; position: absolute; top:0; left:0; right: -17px; overflow-y: scroll;'
+                            allowfullscreen></iframe></div>
+                    <br />
+                    <hr>
+                </div>
+
+        </div>
+        </section>
+        <!-- testimonials -->
+        <section id="testimonials" class="testimonials-section" style="background: #d4dce6;">
+            <div class="rowtesti-text">
+                <div class="col-lg-12">
+                    <h2 class="text-center section-title">Testimonials</h2>
+                </div>
+            </div>
+            <div id="testi-carousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="jumbotron jumbotron-fluid" style="background: #d4dce6;">
+                            <div class="container justify-content-center">
+                                <div class="row">
+                                    <div class="col-md-4 text-center mb-4">
+                                        <img class="circle-avatar align-self-center"
+                                            style="background-image:url(img/testimonials/roxanne.jpg)">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h4 class="section-title">
+                                            <i class="material-icons mirrored">format_quote</i>I remember last year’s
+                                            Algothon vividly. The event provided us with outstanding speakers and their
+                                            engaging lectures, the opportunity to meet bright people
+                                            from all over the world and work collectively towards a challenging goal,
+                                            and an exceptional organisation. It was a fun and educational experience,
+                                            which I recommend greatly to any novice or experienced programmer
+                                            who is interested in what Algorithmic Trading has to offer. I’m happy to be
+                                            returning to Algothon this year as an organiser, to ensure the event runs as
+                                            smoothly as possible.<i class="material-icons">format_quote</i>
+                                        </h4>
+                                        <p class="lead text-right">Roxanne Sabbag</p>
+                                        <p class="lead text-right">Algothon 2018 participant, Imperial College London
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="jumbotron jumbotron-fluid" style="background: #d4dce6;">
+                            <div class="container justify-content-center">
+                                <div class="row">
+                                    <div class="col-md-4 text-center mb-4">
+                                        <img class="circle-avatar align-self-center"
+                                            style="background-image:url(img/testimonials/david.jpg)">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h4 class="section-title">
+                                            <i class="material-icons mirrored">format_quote</i>It was fantastic to have
+                                            the opportunity to attend Algothon 2018 as a volunteer, and get exposure
+                                            into ensuring that the hackathon ran smoothly. It was a great
+                                            experience to network with BlackRock Researchers during the event. I look
+                                            forward to returning to Algothon 2019.<i
+                                                class="material-icons">format_quote</i>
+                                        </h4>
+                                        <p class="lead text-right">David Tyoember</p>
+                                        <p class="lead text-right">Algothon 2018 volunteer, Imperial College London</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="jumbotron jumbotron-fluid" style="background: #d4dce6;">
+                            <div class="container justify-content-center">
+                                <div class="row">
+                                    <div class="col-md-4 text-center mb-4">
+                                        <img class="circle-avatar align-self-center"
+                                            style="background-image:url(img/testimonials/thomas_wong.jpg)">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h4 class="section-title">
+                                            <i class="material-icons mirrored">format_quote</i>In last year's Algothon I
+                                            have worked with students from other universities to build a forecast model
+                                            on Forex using Ornstein–Uhlenbeck process models. There
+                                            were talks by Blackrock researchers and academics in quantitative finance
+                                            which helped us to brainstorm ideas. Workshops on Tensorflow are provided to
+                                            demonstrate the practical aspects of algorithmic trading.
+                                            There are networking events where I can talk to recruiters to gain a better
+                                            understanding of different roles at BlackRock. The event would be suitable
+                                            for anyone who is interested in machine learning and finance.
+                                            I am returning as an organiser this year to help participants with technical
+                                            problems in the Algothon.<i class="material-icons">format_quote</i>
+                                        </h4>
+                                        <p class="lead text-right">Thomas Wong</p>
+                                        <p class="lead text-right">Algothon 2018 participant, Imperial College London
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testi-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testi-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+        <!-- review section -->
+        <section id="algothon-2018">
+            <div class="container">
+                <div class="row justify-content-center card">
+                    <div class="card-body text-center">
+                        <h2 class="card-title text-center section-title">REVIEW ALGOTHON 2018 @ BLACKROCK</h5>
+                            <p class="card-text text-center">Find out more about our inaugural event last year!</p>
+                            <a href="http://2018.algothon.org/" class="btn btn-primary row section-title">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4">
+                                <div class="small text-black-50">
+                                    <a href="mailto:algo.trade@imperial.ac.uk">algo.trade@imperial.ac.uk</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fab fa-facebook-square text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Facebook</h4>
+                                <hr class="my-4">
+                                <div class="small text-black-50">
+                                    <a
+                                        href="https://fb.me/ICAlgorithmicTrading/">https://fb.me/ICAlgorithmicTrading/</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--         <div class="social d-flex justify-content-center">
+          <a href="#" class="mx-2">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="mx-2">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="mx-2">
+            <i class="fab fa-github"></i>
+          </a>
+        </div> -->
+
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-black small text-center text-white">
+            <div class="container">
+                Copyright &copy; Imperial College Algorithmic Trading Society 2019
+            </div>
+        </footer>
+        <!-- Bootstrap js -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <!-- lazy loading -->
+        <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> -->
+        <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="js/grayscale.min.js"></script>
+        <!-- Custom scripts for this template -->
+        <script>
+            var lazyLoadInstance = new LazyLoad({
+                elements_selector: "img"
+            });
+            $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+        </script>
+</body>
+
+</html>
