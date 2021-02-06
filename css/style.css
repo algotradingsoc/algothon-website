@@ -135,7 +135,7 @@
   height: auto;
   min-height: 60rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.8) 20%, rgba(22, 22, 22, 0.5) 40%, rgba(22, 22, 22, 0.7) 80%, #161616 100%), url("../img/bg-masthead.jpg");
+  /* background: linear-gradient(to bottom, rgba(22, 22, 22, 0.8) 20%, rgba(22, 22, 22, 0.5) 40%, rgba(22, 22, 22, 0.7) 80%, #161616 100%), url("../img/bg-masthead.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -297,14 +297,14 @@
 
 .judging-section .featured-text {
   padding-top: 2rem;
-  padding-bottom: 2rem;  
+  padding-bottom: 2rem;
   text-align: justify;
   font-size: 1rem;
 }
 
 .judging-section .workshop-text {
   padding-top: 1rem;
-  padding-bottom: 1rem;  
+  padding-bottom: 1rem;
   text-align: justify;
 }
 
@@ -326,7 +326,7 @@
   padding: 0;
   list-style: none;
   position: relative;
-} 
+}
 
 /* The line */
 .cbp_tmtimeline:before {
@@ -392,7 +392,7 @@
   background: #607D8B;
 }
 
-.cbp_tmtimeline > li .cbp_tmlabel h2 { 
+.cbp_tmtimeline > li .cbp_tmlabel h2 {
   font-size: 1.2em;
   margin-top: 0px;
   padding: 0 0 10px 0;
@@ -490,7 +490,7 @@
     float: right;
     left: auto;
     margin: -55px 5px 0 0px;
-  } 
+  }
 }
 
 .team-section {
@@ -515,7 +515,7 @@
 
 .team-section p {
   padding-right: 2rem;
-  padding-left: 2rem; 
+  padding-left: 2rem;
   text-align: justify;
 }
 
@@ -727,7 +727,7 @@
   border: 5px solid #487eb0;
 }
 
-.speaker-member-unknown img { 
+.speaker-member-unknown img {
   width: 100%;
   height: 100%;
 }
@@ -770,7 +770,7 @@
 
 .organizers-section p {
   padding-right: 2rem;
-  padding-left: 2rem; 
+  padding-left: 2rem;
   text-align: justify;
 }
 
@@ -793,7 +793,7 @@
   text-align: center;
   padding-right: 1rem;
   padding-left: 1rem;
-  
+
 }
 
 @media screen and (min-width: 80em) {

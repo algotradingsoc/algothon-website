@@ -4,6 +4,112 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
+ hr {
+   max-width: 100px;
+   border-width: 3px;
+   border-color: #487eb0;
+ }
+
+ /* ============= Animation background ========= */
+ .background {
+   /* background: linear-gradient(132deg, #FC415A, #591BC5, #212335); */
+   background-size: 400% 400%;
+   animation: Gradient 15s ease infinite;
+   position: relative;
+   height: 100vh;
+   width: 100%;
+   overflow: hidden;
+   padding:0;
+   margin:0px;
+ }
+ .cube {
+   position: absolute;
+   top: 80vh;
+   left: 45vw;
+   width: 10px;
+   height: 10px;
+   border: solid 1px #fad586;
+   transform-origin: top left;
+   transform: scale(0) rotate(0deg) translate(-50%, -50%);
+   animation: cube 10s ease-in forwards infinite;
+ }
+ .cube:nth-child(2) {
+   animation-delay: 1s;
+   left: 25vw;
+   top: 40vh;
+ }
+ .cube:nth-child(3) {
+   animation-delay: 3s;
+   left: 75vw;
+   top: 50vh;
+ }
+ .cube:nth-child(4) {
+   animation-delay: 5s;
+   left: 40vw;
+   top: 15vh;
+ }
+ .cube:nth-child(5) {
+   animation-delay: 7s;
+   left: 80vw;
+   top: 80vh;
+ }
+
+ /* Header content & title & button*/
+ .header-content{
+   margin-top:25%;
+   text-align: center;
+   color:  #EFEEF5;
+ }
+ .header-content h1{
+   text-transform: uppercase;
+   font-size: 3em;
+   letter-spacing: 1px;
+ }
+ .header-content p {
+   font-size: 20px;
+   line-height: 1.5;
+   margin: 20px auto;
+ }
+ .header-content button{
+   width: 140px;
+   margin:20px 10px;
+   color: #591BC5;
+   font-size: 17px;
+   border:1px solid #EFEEF5;
+   font-weight: 500;
+   background: #EFEEF5;
+   border-radius: 20px;
+   padding: 10px;
+   cursor:pointer;
+   transition: .3s;
+ }
+ .header-content button:hover{
+   border-radius: 0;
+ }
+ /* Animate Background*/
+ @keyframes Gradient {
+   0% {
+     background-position: 0% 50%;
+   }
+   50% {
+     background-position: 100% 50%;
+   }
+   100% {
+     background-position: 0% 50%;
+   }
+ }
+ @keyframes cube {
+   from {
+     transform: scale(0) rotate(0deg) translate(-50%, -50%);
+     opacity: 1;
+   }
+   to {
+     transform: scale(20) rotate(960deg) translate(-50%, -50%);
+     opacity: 0;
+   }
+ }
+
+
 @font-face {
     font-family: LeagueSpartan;
     src: url("../font/LeagueSpartan-Bold.otf") format("opentype");
@@ -19,13 +125,14 @@
 }
 
 #main_title {
-	padding-top: 20%;
-	color:MediumSeaGreen; 
+	padding-top: 10%;
+	color:#734046;
 	background-color: white;
+  padding-bottom: 2rem;
 }
 
 #second_title {
-	color:Chocolate; 
+	color:Chocolate;
 	background-color: white;
 }
 
@@ -155,12 +262,19 @@
     }
 }
 
+#animated-min-algothon-logo {
+  width: 85px;
+  height: 75px;
+  margin-bottom: 10px;
+}
+
 .masthead {
     position: relative;
     width: 100%;
     height: auto;
     min-height: 60rem;
     padding: 5rem 0;
+
     /* background: linear-gradient(to bottom, rgba(22, 22, 22, .8) 20%, rgba(22, 22, 22, .5) 40%, rgba(22, 22, 22, .7) 80%, #161616 100%), url(../img/bg-masthead.jpg); */
     /* background: url(../img/matrix.svg);
     background-position: center;
@@ -176,7 +290,7 @@
     height: 100%;
     z-index: -1;
     /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, #fff, rgba(255, 255, 255, 0) 80%), url(../img/back.svg); */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1)), url(../img/back.svg);
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1)), url(../img/back.svg); */
     background-position: center;
     background-repeat: repeat;
     background-attachment: scroll;
@@ -205,7 +319,7 @@
 }
 
 .masthead .masthead-logo {
-    width: 100%;
+    width: 75%;
 }
 
 #masthead-blk-logo {
@@ -257,9 +371,6 @@
     .masthead {
         height: 100vh;
         padding: 0
-    }
-    .masthead .masthead-logo {
-        width: 60%
     }
     .masthead h1,
     .masthead h3 {
@@ -499,6 +610,10 @@
 }
 
 @media screen and (max-width:47.2em) {
+    #animated-min-algothon-logo {
+        width: 57px;
+        height: 50px;
+    }
     .cbp_tmtimeline:before {
         display: none
     }
@@ -1150,7 +1265,7 @@ a:focus {
 
 #algothon-2018 {
     padding: 3rem 0;
-    background: url("../img/reviewbg.jpg");
+    /* background: url("../img/reviewbg.jpg"); */
     background-size: cover;
     background-position: center;
 }
@@ -1174,7 +1289,7 @@ a:focus {
 
 #algothon-2019 {
     padding: 3rem 0;
-    background: url("../img/matrix.svg");
+    /* background: url("../img/matrix.svg"); */
     background-size: 20%;
     background-position: center;
 }
