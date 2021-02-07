@@ -144,7 +144,7 @@
 }
 
 .section-title {
-    font-family: 'Aileron';
+    /*text-align: ;*/
 }
 
 .modal-dialog {
@@ -260,6 +260,10 @@
         outline: 0;
         border-bottom: .25rem solid #487eb0
     }
+}
+
+.line {
+    border-top: 1px solid rgba(0.6, 0.6, 0.6, 0.6);
 }
 
 #animated-min-algothon-logo {
