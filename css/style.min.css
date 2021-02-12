@@ -212,6 +212,7 @@
     .masthead {
         height: 70rem!important;
         min-height: none!important;
+	padding-bottom: 5rem;
     }
 }
 
@@ -219,6 +220,7 @@
     .masthead {
         height: 55rem!important;
         min-height: none!important;
+	padding-bottom: 5rem;
     }
 }
 
