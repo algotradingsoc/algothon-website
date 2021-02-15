@@ -112,7 +112,7 @@
      opacity: 1;
    }
    to {
-     transform: scale(2.5) rotate(1200deg) translate(-50%, -50%);
+     transform: scale(0.5) rotate(1200deg) translate(-50%, -50%);
      opacity: 0;
    }
  }
@@ -302,7 +302,6 @@
     height: auto;
     min-height: 60rem;
     padding: 5rem 0;
-
     /* background: linear-gradient(to bottom, rgba(22, 22, 22, .8) 20%, rgba(22, 22, 22, .5) 40%, rgba(22, 22, 22, .7) 80%, #161616 100%), url(../img/bg-masthead.jpg); */
     /* background: url(../img/matrix.svg);
     background-position: center;
@@ -699,7 +698,7 @@
 }
 
 #about {
-    background: #f0f5fa;
+    background: #fdd1ff;
 }
 
 .team-section .organizers-member {
