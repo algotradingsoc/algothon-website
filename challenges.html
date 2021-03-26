@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Algothon - Schedule</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- Typekit fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/bpa5smf.css">
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Animate CSS by Daniel Eden -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="icon" href="img/logo21 large.svg">
+  </head>
+  <body>
+   <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">
+
+          <img src="img/logo21 large.svg" id="animated-min-algothon-logo" data-name="Animated Algothon Logo" viewBox="0 0 796.4 796.4">
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+                          <a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a>
+                      </li> -->
+            <li class="nav-item">
+              <!-- <a class="nav-link js-scroll-trigger" href="#judging">Judging</a> -->
+            </li>
+            <!-- <li class="nav-item">
+                          <a class="nav-link js-scroll-trigger" href="#winners">Winners</a>
+                      </li>-->
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="faq.html">FAQs</a>
+            </li>
+            <!-- <li class="nav-item">
+                          <a class="nav-link js-scroll-trigger" href="#team">Organising Team</a>
+                      </li> -->
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="https://www.linkedin.com/company/algothon/"><i class="fab fa-linkedin" style="font-size: 1.5rem; margin-top: -0.25rem;"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   <div class="mt-5">
+
+	<br>
+	<br>
+	<br>
+	<br>
+<h1>Algothon 2021 challenges</h1>
+<h2>Data Cleaning Challenge</h2>
+<p>It's Spring, it's time for a spring clean. This is a small challenge to warm you up to the event!​</p>
+<p>You will receive a small timeseries dataset that has been corrupted in some form. Your job is to clean this dataset.
+You will only receive the corrupted timeseries. You are evaluated on the MSE of your cleaned dataset and the uncorrupted data.</p>
+<h3>Submission</h3>
+<p>Please submit your file in the format: "{your teamname here}_data_cleaning.csv".
+Uncorrupt the 'data_clean.csv' file and submit the clean vision through the google form: https://forms.gle/7vojifiKqWniVH6C6</p>
+<hr />
+<h2>Machine Learning Strategy Challenge</h2>
+<p>Aspect will provide a list of trades generated from a real production trading strategy, each trade has 3 fields: market / time-on / time-off (market is anonymised) and the pnl for each trade.</p>
+<p>The challenge is to use all available market information prior to the trade to forecast the profitability of the trade.</p>
+<h3>Universe:</h3>
+<p>Liquid futures on: stock indices, FX, FI, Commodities</p>
+<h3>Each model should predict the return of each trade and return an action (-1,0,1)</h3>
+<ul>
+<li>1 means implement the trade</li>
+<li>0 means do nothing</li>
+<li>-1 means implement the opposite of the trade</li>
+</ul>
+<h3>Evaluation criteria</h3>
+<p>The portfolio returns are calculated as the sum of returns for each trade, according to the recommended actions by the model.</p>
+<p>We will then score the model using the sharpe ratio of the daily returns over a test period of 2 years.</p>
+<h3>Data sources</h3>
+<p>Any market data up to the point of trade execution. (For example, intraday price of a futures contract, different realized vol estimators, implied volatility, volume etc etc. We don't want to put any constraints here, so use whatever you think your machine learning model will perform best with - time to be creative!).</p>
+<p>Train period: 2006-2015
+Validation period: 2016-2017
+Test period: 2018-2019</p>
+<h3>Tips</h3>
+<ul>
+<li>Avoid any look-ahead bias (don't use any data observed after the open-timestamp of the trade when predicting the action)</li>
+<li>Be imaginative with the data you use for forecasting. If you can't find any interesting forecasts from pure price data, try looking at volatility</li>
+<li>Make use of Python 3.7 + Tensorflow/Keras (if using neural networks) and include some instructions on how to run the model/reproduce results</li>
+</ul>
+<h3>Submission</h3>
+<p>Please submit your files in the format: "{your teamname here}_validation_ml.csv" "{your teamname here}_test_ml.csv", both files must be submitted at the same time.
+Submit your validation and test predictions here: https://forms.gle/YY3k9ucxSNXe1G7v7</p>
+<hr />
+<h2>Prediction Challenge</h2>
+<p>Encrypted data provided for US stocks. Stock ticker and time periods are anonymized.</p>
+<p>Price features: Adjusted OHLC price, Volume</p>
+<p>Options: Implied volatility for different expiry dates and delta, Put/Call Volume and Open Interest</p>
+<p>Universe:
+ETF for US equity, bonds and commodities. (column id in the training csv file)</p>
+<h3>Goal</h3>
+<p>Predict Next 20-days log-return (column target_20 in the training csv file)</p>
+<p>Models can predict the direction of return and return an action (-1,0,1)</p>
+<ul>
+<li>1 means the model will buy and hold the stock for the next 20 days</li>
+<li>0 means the model will do nothing   </li>
+<li>-1 means the model will sell the stock and cover in 20 days</li>
+</ul>
+<p>Models can also assign a weight between -1 to 1 as a portfolio holding instead. </p>
+<h3>Evaluation criteria:</h3>
+<p>The portfolio return is calculated as the sum of return for each asset  </p>
+<p>We then score the model using the sharpe ratio of the daily returns over a test period of 2 years   </p>
+<h3>Data sources:</h3>
+<p>WRDS data: US EOD price and US EOD options  </p>
+<ul>
+<li>Train period: 2006-2015</li>
+<li>Validation period: 2016-2017</li>
+<li>Test period: 2018-2019</li>
+</ul>
+<p>Note: In the training data, some of the ETFs will have limited or no data in the train period because these ETFs are only launched after 2015. Consider how to use the features of other ETFs to learn patterns that can be generalised, or set the weights of these assets to be zero.</p>
+<h3>Submission</h3>
+<p>In the example notebook, we provide two functions which allows you to generate predictions for the validation (Public Leaderboard) and test (Private Leaderboard) datasets. It will generate around 20k predictions each so it will takes time to run.
+You should them submit the csv predictions with filename the format {your_team_name}_validation_prediction.csv and {your_team_name}_test_prediction.csv. Submit your validation and test predictions here: https://forms.gle/4RG8HNJ8CLaziuaTA</p>
+<hr />
+<h2>ESG challenge</h2>
+<p>Encrypted data provided for US stocks. Stock ticker and time periods are anonymized and shuffled.  </p>
+<p>Stock features: percentage change (for different number of days),  float market capitalization (to allow for calculation of index weights)</p>
+<p>ESG:  ESG features for each stock</p>
+<p>S&amp;P500: Target Daily Percentage Change</p>
+<h3>Goal</h3>
+<p>Assign a weighting to the restricted universe of portfolio for every trading day (ESG grade above certain threshold)
+The weights shall sum to 1, and the portfolio is long-only (i.e. each weight component is non-negative)</p>
+<ul>
+<li>Challenge: Restrict your portfolio to all three E, S, G Components with Score &gt;45 </li>
+</ul>
+<p>No positive weights should be assigned to stocks not fulfilling ESG Score, or stocks without an ESG score</p>
+<h3>Evaluation criteria:</h3>
+<p>The portfolio tracking error is calculated as the standard deviation of the portfolio against S&amp;P500 Benchmark</p>
+<p>The model is scored using the tracking error over a test period of 2 year, points will be given in relative to submitted entries of other participants.</p>
+<p>Factset data (price), Arabesque ESG Rating Data, S&amp;P 500 Daily Change data</p>
+<ul>
+<li>Train period: 2011-2016</li>
+<li>Validation period: 2017-2018</li>
+<li>Test period: 2019-2020</li>
+</ul>
+<h3>Submission</h3>
+<p>Please submit your files in the format: "{your teamname here}_validation_esg.csv" "{your teamname here}_test_esg.csv", both files must be submitted at the same time.
+Submit the link to your application here through the google form: https://forms.gle/PSg54dMwZjia1HoYA</p>
+<hr />
+<h2>Long-Short Sector Strategy Challenge</h2>
+<h3>Goal</h3>
+<p>Students are asked to choose develop a long-short strategy in one of the 3 sectors provided (tech=1, energy=2 and gold=3).</p>
+<p>They must have a neutral position at all times, and their task is to provide a time series of weights of their long and short stocks. The weights can be any number between -1 and 1, with a negative number meaning a short position.</p>
+<h3>Evaluation Criteria</h3>
+<p>The performance of the models will be assessed by calculating cumulative returns-0.5*max drawdown. This metric needs to be maximised.</p>
+<h3>Data</h3>
+<p>The data provided contains 5 US stocks from the sector chosen. Several encrypted features are provided and the target are the forward 5-day log returns. </p>
+<h3>Submission</h3>
+<p>Please submit your files in the format: "{your teamname here}_validation_long_short.csv" "{your teamname here}_test_long_short.csv", both files must be submitted at the same time.
+Submit the link to your application here through the google form: https://forms.gle/55XnqyN8DpHDcdBD6</p>
+<hr />
+<h2>Data Visualisation Challenge</h2>
+<h3>Goal</h3>
+<p>Using the data from the data cleaning challenge, participants will build a dashboard to interpret the data. This will be in the form of a website hosted for free using Heroku. Apart from the visualisation tool itself, the analysis derived from the data should be meaningful.</p>
+<h3>Evaluation criteria</h3>
+<p>A third of the weight will be given to each of the following:
+- Functionality of the dashboard
+- Inisights derived from the data
+- UX (design and ease of use) of the dashboard</p>
+<h3>Data</h3>
+<p>Clean data from the data cleaning data.</p>
+<h3>Submission</h3>
+<p>Submit the link to your application here through the google form: https://forms.gle/upnzQnKjp4gqzU2EA</p>
+<hr />
+<h2>Low Latency Challenge</h2>
+<h3>Goal</h3>
+<p>Latency is important.
+Luckily, there are a vast number of algorithms for doing signal classification, from efficient signal processing to effective ML.</p>
+<h3>Evaluation criteria</h3>
+<p>In the challenge, you are asked to predict whether a single ticker's price will go up or down in the next sample.</p>
+<ul>
+<li>Your classifier must achieve over 50% accuracy on unseen test data to be considered.</li>
+<li>Teams will be ranked based on the time take to classify.</li>
+<li>There is a timeout of 10 seconds. In that time you must be able to classify all the test data  each input, your solution should print to terminal either 1 or 0 for if it expects the signal to increase or decrease respectively.</li>
+<li>All submissions will be tested on Raspberry Pi, an ARM device running Raspbian OS and pre-installed with several tools. Pandas and SKLearn have also been installed.</li>
+<li>Your solution must be a program which can be run by calling <code>make run</code> in the root directory of your repository.</li>
+<li>Your solution must take inputs through the terminal. The input will be several comma separated terms, the 500 previous log returns (you do not need to use all 500).</li>
+<li>For each input, your solution should print to terminal either 1 or 0 for if it expects the signal to increase or decrease respectively.</li>
+<li>NOTE: This challenge's deadline is at 14:00, one hour earlier than the other challenges.</li>
+</ul>
+<h3>Data</h3>
+<p>Training data can be found at <a href="https://drive.google.com/file/d/1l12tnmFx6giQBGDhzKXvysInX66ow6fW/view?usp=sharing">here</a>.</p>
+<h3>Submission</h3>
+<p>All submissions must have a public GitHub repository.
+Your best solution should be stored on the master branch.
+Before the end of the competition you must submit a link to your repository through the following <a href="https://docs.google.com/forms/d/e/1FAIpQLScb5JWA0MCUxRbzzZA-00C1U8OzNTV9GJtqzfJXX_llDKxx3Q/viewform?usp=sf_link">form</a>.
+Please only make one submission per team.</p>
+<h3>Examples</h3>
+<p>We have written a few toy example which should illustrate the format of your submission.</p>
+<ul>
+<li>A KNN classifier, implemented in Python with SKLearn, <a href="https://github.com/ALGCDG/AlgothonKNN">here</a>.</li>
+<li>Random Guesser, implemented in Python, <a href="https://github.com/ALGCDG/randomguesser">here</a>.</li>
+<li>Constant Guesser, implemented in C++, <a href="https://github.com/ALGCDG/ConstantGuesser">here</a>.</li>
+</ul>	</div>
+    <footer class="bg-white small text-center">
+      <div class="container">
+        Copyright &copy; Imperial College Algorithmic Trading Society 2021
+      </div>
+    </footer>
+    <!-- Bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
